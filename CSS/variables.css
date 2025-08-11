@@ -3,7 +3,7 @@
   src:url(/fonts/Poppins-Regular.ttf);
 }
 
-root {
+:root {
   --bg-color: #FFFE8E;
   --primary-color: #D9D9D9;
   --accent-color: #DB8B5E;
