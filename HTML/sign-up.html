@@ -4,11 +4,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>name</title>
+  <title>sign-up</title>
+  
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 
 <body>
+  <div class="container">
+    <h1>Patient Registration</h1>
+    <h2>Create an account</h2>
+      <form id="PatientRegistration" action="https://formsubmit.co/bettyokoloe@gmail.com" method="POST"  enctype="multipart/form-data" target="_blank">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <label for="name"><span class="required-star"></span></label><br>
+        <input type="text" id="name" placeholder="Enter Fullname"required><br><br>
+        
+        <label for="email"></label><br>
+        <input type="email/tel" id="email/phone" placeholder="Email/Mobile number"><br><br>
+
+        <label for="password"></label><br>
+        <input type="password" placeholder="Create password" id="password">
+        <i class="ri-eye-off-line" id="eye"></i><br><br>
+
+        <label for="Re-password"></label><br>
+        <input type="password" placeholder="Re-enter password" id="passwor">
+        <i class="ri-eye-off-line" id="eye"></i><br><br>
+    </form>
+
+    <button>sign up</button>
+    <button>sign up with Email</button>
+
+    <h5>Already have an account? <a href>Log in</a></h5>
+    <h5>Are you a Doctor? <a href>sign up</a></h5>
+
+    <div class="image">
+
+    </div>
+  </div>
   
+  <script>
+
+    let eyeIcon = document.getElementById('eye');
+    // let eyeIcons = document.getElementById('eye1')
+    let createPassword = document.getElementById('password');
+    // let rePassword = document.getElementById('password1')
+ 
+    eyeIcon.onclick = function(){
+      if (createPassword.type === 'password'){
+        createPassword.type = 'text';
+       
+      } else {
+        createPassword.type = 'password';
+        
+      }
+    }
+    // eyeIcons.onclick = function(){
+    //   if (rePassword.type === 'password'){
+    //     rePassword.type = 'text';
+    //   } else {
+    //     rePassword.type = 'password'
+    //   }
+    // }
+  </script>
 </body>
 
 </html>
