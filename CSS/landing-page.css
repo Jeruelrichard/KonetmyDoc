@@ -1,3 +1,154 @@
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.7em;
+  padding: 20px;
+}
+.nav-items a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header button {
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: button;
+  
+}
+
+header button#sign-up-btn {
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.hero {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 50%;
+  align-self: flex-start;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: solid black;
+}
+
+.hero p {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 10%;
+}
+
+.hero img {
+  object-fit: cover;
+  max-width: 45%;
+  height: 470px;
+  border-radius: 0 0 0 300px;
+  margin: 20px 0;
+}
+
+.book-appointment {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.cta-btn {
+  display: flex;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.cta-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.people-images {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  margin: 50px 0;
+}
+
+.people-images img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+#skip-the-wait {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+  color: #451B03;
+}
+#skip-the-wait h4{
+  font-size: 60px;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+#skip-the-wait p {
+  font-size: 2.75em;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #1a2b3c;
+  display: flex;
+  justify-content: space-between;
+  /*flex-direction: column;*/
+  align-items: center;
+  font-size: 14px;
+  padding: 20px 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.fa-brands.fa-facebook.fa-2x {
+  color: white;
+}
+
+.fa-brands.fa-x-twitter.fa-2x {
+  color: black;
 }

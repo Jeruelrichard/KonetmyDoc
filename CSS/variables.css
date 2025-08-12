@@ -4,9 +4,10 @@
 }
 
 :root {
-  --bg-color: #FFFE8E;
+  --bg-color: #FFF8EE;
   --primary-color: #D9D9D9;
   --accent-color: #DB8B5E;
   --text-color: black;
   --font-family: "OurFont";
+  --hover-color: #0056b3;
 }
