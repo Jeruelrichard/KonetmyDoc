@@ -1,0 +1,65 @@
+nav{
+    display: flex;
+    gap: 2.5rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.nav-buttons{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: black;
+}
+.book-app-button{
+    background-color: rgb(247, 126, 82);
+    border-radius: 5px;
+    padding:0.4rem ;
+    text-decoration: none;
+    color: black;
+}
+main{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+main > div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100rem ;
+    max-width: 16rem ;
+    width: 100%;
+    height:17rem;
+    background-color: blanchedalmond;
+    gap: 1rem;
+}
+.image-div{
+    border-radius: 2rem;
+    /* width: 10rem; */
+}
+.Edit-profile{
+    background-color: orange;
+    width:6rem ;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.right-section-buttons{
+    background-color: rgb(196, 196, 196);
+    width: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: black;
+}
