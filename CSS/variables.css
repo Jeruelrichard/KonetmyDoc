@@ -3,8 +3,8 @@
   src:url(/fonts/Poppins-Regular.ttf);
 }
 
-root {
-  --bg-color: #FFFE8E;
+:root {
+  --bg-color: #fff8ee;
   --primary-color: #D9D9D9;
   --accent-color: #DB8B5E;
   --text-color: black;

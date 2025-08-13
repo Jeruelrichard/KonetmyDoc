@@ -1,0 +1,259 @@
+.container{
+  display:flex;
+  width: 90%;
+  flex-wrap: wrap;
+  
+}
+
+.form{
+  width:34%;
+  margin:20px;
+  margin-left:15%;
+  height: 65vh;
+  
+}
+
+
+.form h1{
+  align-items: start;
+  text-align: center;
+  justify-content: center;
+  margin-left: 20px;
+  font-size:2.5em;
+  font-weight: 700;
+
+}
+.form h2{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+input{
+  width:100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  text-align: center;
+   box-shadow:0 4px 8px grey;
+   border:none;
+}
+button{
+  width:100%;
+  height: 10%; 
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px; 
+  font-size :1.7em;
+  text-align: center;
+  box-shadow:0 4px 8px black ;
+}
+.up-btn{
+  background: var(--accent-color);
+  color:var(--bg-color);
+  
+
+}
+.email-btn{
+  background-color: var(--bg-color);
+  border: 1px solid black;
+  /* font-size:1.7em; */
+}
+.em i{
+  color: var(--accent-color);
+  position: absolute;
+  padding: 2px;
+  left:15%;
+  font-size:2em;
+}
+.up-btn:hover{
+  background-color: var(--bg-color);
+  border: 1px solid black;
+  color: black;
+}
+.email-btn:hover{
+  color:var(--bg-color);
+}
+.form h5{
+  margin-left:30px;
+  margin-top: 20px;
+}
+.form h5 a{
+  color:var(--accent-color);
+  cursor: grab;
+}
+.image{
+  background-image: url(../images/pic3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 45%;
+  margin-top: 8%;
+  margin-left: 5vh;
+  /* margin-right: 40px; */
+  height: 75vh;
+}
+@media (max-width:400px){
+  .container{
+  display:flex;
+  width: 90%;
+  flex-wrap: wrap;
+  
+}
+
+.form{
+  width:34%;
+  justify-content: start;
+  height: 65vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+
+.form h1{
+  margin: 10px;
+  align-items: start;
+  text-align: start;
+  justify-content: start;
+  font-size:1.8em;
+  font-weight: 600;
+
+}
+.form h2{
+  text-align: start;
+  align-items: start;
+  justify-content: start;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+input{
+  width:100%;
+  height: 60px;
+  text-align: center;
+   box-shadow:0 4px 8px grey;
+   border:none;
+}
+button{
+  width:100%;
+  height: 10%; 
+  align-items: start;
+  margin-bottom: 20px;
+  border-radius: 10px; 
+  font-size :1.3em;
+  text-align: center;
+  box-shadow:0 4px 8px black ;
+}
+
+.form h5{
+  margin:10px;
+}
+.form h5 a{
+   margin:10px;
+  cursor: grab;
+}
+.image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35%;
+  margin-top: 30%;
+  height: 75vh;
+}
+.em i{
+  position: absolute;
+  padding: 5px;
+  font-size:1em;
+}
+}
+.box{
+  width:40%;
+  margin:20px;
+  margin-left:23%;
+  height: 100vh;
+}
+
+.box h1{
+  text-align: center;
+  font-size: 3em;
+}
+.box label{
+  text-align: start;
+  font-size: large;
+  font-weight: 600;
+}
+.box form{
+  margin:40px
+}
+.box input{
+  width:100%;
+  height: 80px;
+  text-align: center;
+   border:none;
+}
+.submit-btn{
+  width:100%;
+  height: 80px;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px; 
+  font-size :1.7em;
+  text-align: center;
+}
+.submit-btn:hover{
+  color:black;
+  background-color: var(--primary-color);
+}
+.img{
+  background-image: url(../images/pic2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35%;
+  position: absolute;
+  /* padding:60p%; */
+  bottom:30%;
+  left:40%;
+  height: 40vh;
+}
+@media(max-width:400px){
+  .box{
+  width:65%;
+  margin:20px;
+  height: 100vh;
+}
+
+.box h1{
+  margin: 20px;
+  text-align: start;
+  font-size: 1.3em;
+}
+.box label{
+  text-align: start;
+  font-size: 1em;
+  font-weight: 500;
+}
+.box form{
+  margin:40px;
+}
+.box input{
+  width:100%;
+  height: 60px;
+  text-align: center;
+}
+.submit-btn{
+  width:100%;
+  height: 60px;
+  align-items: start;
+  border-radius: 10px; 
+  font-size :1.3em;
+  text-align: center;
+}
+.img{
+  width: 45%;
+  position: absolute;
+  bottom:30%;
+  left:50%;
+  height: 40vh;
+}
+}

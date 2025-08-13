@@ -4,10 +4,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>login</title>
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/base.css">
+  <link rel="stylesheet" href="../CSS/stylelogin.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
-
+<!-- done i think -->
 <body>
+  <div class="container">
+    <div class="form">
+    
+      <h1>Welcome Back!</h1>
+      <p>Please enter your login information</p>
+    
+
+      <form id="PatientRegistration" action="https://formsubmit.co/bettyokoloe@gmail.com" method="POST"  enctype="multipart/form-data" target="_blank">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <label for="email">Email</label>
+        <div class="email">
+          <i class="ri-mail-line" ></i>
+          <input type="email" id="email" placeholder="enter your email" >
+        <br><br>
+       </div>
+       
+       <label for="password">Password</label>
+       <div class="password">
+        <i class="ri-lock-line"></i>
+        <input type="password" placeholder="enter your password" id="password">
+        <br><br>
+        </div>
+        
+
+         <div class="sign">
+        
+        <div class="check">
+        <input type="checkbox" id="remember" name="remember[]" value="remember">
+        <label for="remember">Remember me</label>
+        </div>
+        
+        <div class="a">
+        <a href>Forget password?</a>
+        </div> 
+        </div>
+        
+        <button class="log-btn">login</button><br>
+
+          <h5>- or sign in with-</h5>
+       
+        <button name="_next" value="" class="logoog-btn"><img src="../images/googleGF.png" width="20px" height="30px">login with Google</button><br>
+        </form>
+        
+        
+    </div>
+
+    <div class="image">
+      
+    </div>
+   
+  </div>
+   
   
 </body>
 

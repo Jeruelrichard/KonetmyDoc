@@ -7,66 +7,58 @@
   <title>sign-up</title>
   <link rel="stylesheet" href="../CSS/variables.css">
   <link rel="stylesheet" href="../CSS/base.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-</head>
+  <link rel="stylesheet" href="../CSS/designsignup.css">
 
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<!-- think im done it it  -->
 <body>
   <div class="container">
-    <h1>Patient Registration</h1>
-    <h2>Create an account</h2>
+    <div class="form">
+    
+      <h1>Patient Registration</h1>
+      <h2>Create an account</h2>
+    
+
       <form id="PatientRegistration" action="https://formsubmit.co/bettyokoloe@gmail.com" method="POST"  enctype="multipart/form-data" target="_blank">
         <input type="hidden" name="_captcha" value="false">
         
         <label for="name"><span class="required-star"></span></label><br>
-        <input type="text" id="name" placeholder="Enter Fullname"required><br><br>
+        <input type="text" id="name" placeholder="Enter Fullname"required><br>
         
         <label for="email"></label><br>
-        <input type="email/tel" id="email/phone" placeholder="Email/Mobile number"><br><br>
+        <input type="email/tel" id="email/phone" placeholder="Email/Mobile number"><br>
 
         <label for="password"></label><br>
-        <input type="password" placeholder="Create password" id="password">
-        <i class="ri-eye-off-line" id="eye"></i><br><br>
+        <input type="password" placeholder="Create password" id="password"><br>
+        
 
         <label for="Re-password"></label><br>
-        <input type="password" placeholder="Re-enter password" id="passwor">
-        <i class="ri-eye-off-line" id="eye"></i><br><br>
-    </form>
+        <input type="password" placeholder="Re-enter password" id="passwor"><br><br> 
+       
 
-    <button>sign up</button>
-    <button>sign up with Email</button>
+        <button class="up-btn">sign up</button><br>
+        <div class="em">
+        <i class="ri-mail-fill"></i>
+        <button name="_next" value="http://127.0.0.1:5501/HTML/email-signup.html" class="email-btn">sign up with Email</button>
+        </div>
+        </form>
 
-    <h5>Already have an account? <a href>Log in</a></h5>
-    <h5>Are you a Doctor? <a href>sign up</a></h5>
+        
+         
+
+        <h5>Already have an account? <a href>Log in</a></h5>
+        
+    </div>
 
     <div class="image">
-
+      
     </div>
+   
   </div>
+   
   
-  <script>
-
-    let eyeIcon = document.getElementById('eye');
-    // let eyeIcons = document.getElementById('eye1')
-    let createPassword = document.getElementById('password');
-    // let rePassword = document.getElementById('password1')
- 
-    eyeIcon.onclick = function(){
-      if (createPassword.type === 'password'){
-        createPassword.type = 'text';
-       
-      } else {
-        createPassword.type = 'password';
-        
-      }
-    }
-    // eyeIcons.onclick = function(){
-    //   if (rePassword.type === 'password'){
-    //     rePassword.type = 'text';
-    //   } else {
-    //     rePassword.type = 'password'
-    //   }
-    // }
-  </script>
+  
 </body>
 
 </html>
