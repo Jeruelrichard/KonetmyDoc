@@ -8,20 +8,23 @@ header {
   font-size: 1.7em;
   padding: 20px;
 }
+
 .nav-items a {
+  background-color: var(--accent-color);
   font-size: 20px;
   font-weight: bold;
-}
-
-header button {
   box-sizing: border-box;
   border-radius: 20px;
+  padding: 3px 20px;
   margin: 10px;
   cursor: button;
-  
 }
 
-header button#sign-up-btn {
+.nav-items a:hover {
+  background-color: var(--hover-color);
+}
+
+#sign-up-btn {
   background-color: transparent;
   border: 2px solid black;
 }
@@ -84,6 +87,10 @@ header button#sign-up-btn {
   color: #fff;
 }
 
+.book-appointment a:hover {
+  background-color: var(--hover-color);
+}
+
 .people-images {
   display: flex;
   justify-content: space-evenly;
@@ -120,7 +127,6 @@ footer {
   background-color: #1a2b3c;
   display: flex;
   justify-content: space-between;
-  /*flex-direction: column;*/
   align-items: center;
   font-size: 14px;
   padding: 20px 40px;
