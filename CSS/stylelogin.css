@@ -1,25 +1,25 @@
 .container{
-  display:flex;
+  display:grid;
   width: 90%;
-  flex-wrap: wrap;
-  
+  height: 80vh;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .form{
-  width:34%;
-  margin-top:9%;
-  margin-left:15%;
-  height: 65vh;
+  width:70%;
+  margin-top:15%;
+  margin-left:45%;
+  height: 70vh;
   
 }
 
 
 .form h1{
-  align-items: start;
+  /* align-items: start; */
   text-align: start;
   /* justify-content: center; */
   margin-left: 20px;
-  font-size:2.5em;
+  font-size:3.4em;
   font-weight: 700;
 
 }
@@ -27,7 +27,7 @@
   text-align: start;
   align-items: center;
   justify-content: center;
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 500;
   margin-top:50px;
 }
@@ -35,17 +35,18 @@
 .email i{
  display:flex;
  position: absolute;
- padding:25px;
- min-width: 40px;
+ padding:18px;
+ font-size: 2em;
 }
 .password i{
   display:flex;
   position: absolute;
-
-  padding:25px;
+  font-size: 2em;
+  padding:18px;
   
 }
 label{
+  font-size: 1.5em;
   font-weight: 700;
 }
 .password input {
@@ -62,26 +63,34 @@ label{
   height: 60px;
   background-color: var(--primary-color);
   text-align: center;
-   box-shadow:0 4px 8px grey;
-   border:none;
-   font-size: 2em;
+  box-shadow:0 4px 8px grey;
+  border:none;
+  font-size: 2em;
 }
  .email{
   display: flex;
- 
+ }
+ .password{
+  display: flex;
  }
 .sign{
   justify-content: space-between;
-   display:flex;
-   margin-bottom: 20px;
+  display:flex;
+  margin:20px;
    
 }
 .sign a{
   color:rgb(211, 4, 4);
+
+}
+.sign a:hover{
+  color:blue;
+  
 }
 .check input{
 justify-items: start;
-  align-items: start;
+align-items: start;
+margin-top: 15px;
   
 }
 .check label{
@@ -89,10 +98,12 @@ justify-items: start;
   padding:2px;
 }
 button{
-  width:60%;
+  width:80%;
   height: 60px; 
   align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
+  margin-left: 60px;
   border-radius: 10px; 
   font-size :1.7em;
   text-align: center;
@@ -101,18 +112,17 @@ button{
 .log-btn{
   background: var(--accent-color);
   color:var(--bg-color);
-  margin-left:20%;
+ 
 
 }
 .logoog-btn{
   background-color: var(--bg-color);
   border: 1px solid black;
-  margin-left:20%;
+  
   
 }
 
 .log-btn:hover{
-  background-color: rgb(63, 58, 58);
   border: 1px solid black;
   color:var(--bg-color);
 }
@@ -122,7 +132,7 @@ button{
 .logoog-btn img{
   position: absolute;
   padding:1px;
-  left:21%;
+  left:25%;
   min-width: 10px;
 }
 .form h5{
@@ -136,54 +146,53 @@ button{
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 45%;
-  margin-top: 8%;
-  margin-left: 5vh;
-  /* margin-right: 40px; */
+  width: 100%;
+  margin-top: 20%;
+  margin-left: 6%;
+  align-items: start;
+  justify-content: start;
   height: 75vh;
 }
-@media (max-width:400px){
+@media (max-width:767px){
   .container{
     align-items: start;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     
   }
   .form{
-    width:50%;
+    width:70%;
     flex-direction: column;
     align-items: start;
     flex-wrap: wrap;
+    margin:60px;
   }
   .image{
-    position: absolute;
-    width:40%;
-    left:200px;
-    top:100px;
+    width:100%;
+    margin-left:10px;
+    margin-top:100px;
     background-size: contain;
+    height: 60vh;
   }
   .form h1{
-  text-align: start;
-  align-items: start;
+  text-align: center;
   font-size:2em;
-  font-weight: 400;
+  font-weight: 600;
 
 }
 .form p{
   text-align: start;
   align-items: start;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 500;
   margin-top:20px;
 }
 
 .email i{
- display:flex;
  position: absolute;
  padding:10px;
 }
 .password i{
-  display:flex;
   position: absolute;
   padding:10px;
 }
@@ -194,21 +203,22 @@ label{
 }
 .password input {
   width:100%;
-  height: 60px;
-  text-align: start;
-   border:none;
-   font-size: 0.8em;
+  height: 50px;
+  text-align: center;
+  border:none;
+  font-size: 0.8em;
 }
 .email input {
   width:100%;
-  height: 60px;
+  height: 50px;
   text-align: center;
-   border:none;
-   font-size: 0.8em;
+  border:none;
+  font-size: 0.8em;
 }
 .sign{
   justify-content: start;
    display: flex;
+   align-items: start;
 
 }
 .sign a{
@@ -222,47 +232,137 @@ justify-items: start;
 }
 .check label{
   position: absolute;
-  padding:45px;
+  padding:46px;
   
 }
 button{
   width:100%;
-  height: 60px; 
+  height: 50px; 
   align-items: start;
-  margin-bottom: 20px;
+  margin: 5px;
   font-size :1em;
   text-align: center;
-  
 }
 .log-btn{
-  margin:10%;
 
 }
 .logoog-btn{
   background-color: var(--bg-color);
   border: 1px solid black;
-  margin:10px;
   
 }
 
 .logoog-btn img{
   position: absolute;
-  padding:1px;
-  left:65px;
+  padding:3px;
+  bottom:-27%;
+  left:80px;
+}
+}
+@media (max-width:1024px){
+  .container{
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .form{
+    width:70%;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    margin:60px;
+  }
+  .image{
+    width:100%;
+    margin-left:5px;
+    margin-top:200px;
+    background-size: contain;
+    height: 60vh;
+  }
+  .form h1{
+  text-align: center;
+  font-size:2em;
+  font-weight: 600;
+
+}
+.form p{
+  text-align: start;
+  align-items: start;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-top:20px;
+}
+
+.email i{
+ position: absolute;
+ padding:10px;
+}
+.password i{
+  position: absolute;
+  padding:10px;
+}
+label{
+  font-weight: 700;
+  font-size: 0.8em;
+  text-align: start;
+}
+.password input {
+  width:100%;
+  height: 50px;
+  text-align: center;
+  border:none;
+  font-size: 0.8em;
+}
+.email input {
+  width:100%;
+  height: 50px;
+  text-align: center;
+  border:none;
+  font-size: 0.8em;
+}
+.sign{
+  justify-content: start;
+   display: flex;
+   align-items: start;
+
+}
+.sign a{
+  justify-content: start;
+}
+.check input{
+justify-items: start;
+  align-items: start;
+  margin-top:50px;
+
+}
+.check label{
+  position: absolute;
+  padding:46px;
   
+}
+button{
+  width:100%;
+  height: 50px; 
+  align-items: start;
+  margin: 5px;
+  font-size :1.2em;
+  text-align: center;
+}
+.log-btn{
+  
+}
+.logoog-btn{
+  background-color: var(--bg-color);
+  border: 1px solid black;
+  
+}
+
+.logoog-btn img{
+  position: absolute;
+  padding:3px;
+  left:80px;
+  bottom:-27%;  
     
 }
-.form h5{
-  margin:20px;
-  padding:15px;
 }
-  
-}
-/* @keyframes fadeIn {
-  from{
-    opacity:0;
-  }
-  to{
-    opacity:1;
-  }
-} */
