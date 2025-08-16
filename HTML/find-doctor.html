@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="../CSS/variables.css">
    <link rel="stylesheet" href="../CSS/base.css">
-   <link rel="stylesheet" href="../CSS/find-doctor.css"
+   <link rel="stylesheet" href="../CSS/find-doctor.css">
   <title>Find A Doctor</title>
   <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
@@ -47,8 +47,66 @@
   <button class="filter-btn" data-filter="allergist">Allergist</button>
   <button class="filter-btn" data-filter="internal-medicine">Internal Medicine</button>
 </header>
+
+<main>
+  <div class="cards-container">
+    <h1>Choose Doctor</h1>
+    
+    <div class="card" data-category="psychologist">
+      <img src="/images/african-doctor-medical-record-male-south-africa-patient-his-hand-33997769.webp">
+      <span class="name"><b>Dr. Ebuka Anyanwu</b></span>
+      <div class="rating">⭐ 4.9</div>
+      <span class="experience">5 years experience</span>
+      <div class="title">Psychologist specialist</div>
+      <div class="availability">Available Today: </div>
+      <div class="consultation">*Online Consultation</div>
+      <div class="consultation">*Offline Garki Hospital, Area 3, Garki, Abuja</div>
+      <div class="fee">Fee consultation <span class="code"><s>#30k-#50k</s></span><span id="free">FREE</span></div>
+    </div>
+    
+    <div class="card" data-category="family-doctor" id="Ola">
+      <img src="/images/male-nurse-working-clinic_23-2149868924 (1).webp">
+      <span class="name"><b>Dr. Oladipo Ayomide</b></span>
+      <div class="rating">⭐ 5.0</div>
+      <span class="experience">10 years experience</span>
+      <div class="title">Family Doctor</div>
+      <div class="availability">Available Today: </div>
+      <div class="consultation">*Online Consultation</div>
+      <div class="consultation">*Offline Baylight Watch Hospital, Garki, Abuja</div>
+      <div class="fee">Fee consultation <span class="code"><s>#30k-#50k</s></span><span id="free">FREE</span></div>
+    </div>
+    
+    <div class="card" data-category="family-doctor" id="Olu">
+      <img src="/images/20250816_020045.webp">
+      <span class="name"><b>Dr. Oluwa David</b></span>
+      <div class="rating">⭐ 4.9</div>
+      <span class="experience">8 years experience</span>
+      <div class="title">Family Doctor</div>
+      <div class="availability">Available Today: </div>
+      <div class="consultation">*Online Consultation</div>
+      <div class="consultation">*Offline Maritama General Hospital, Maitama, Abuja</div>
+      <div class="fee">Fee consultation <span class="code"><s>#20k-#60k</s></span><span id="free">FREE</span></div>
+    </div>
+    
+    <div class="card" data-category="allergist" id="Uche">
+      <img src="/images/shutterstock_1927229678.webp">
+      <span class="name"><b>Dr. Uchechukwu Esther</b></span>
+      <div class="rating">⭐ 5.0</div>
+      <span class="experience">10 years experience</span>
+      <div class="title">Allergist</div>
+      <div class="availability">Available Today: </div>
+      <div class="consultation">*Online Consultation</div>
+      <div class="consultation">*Offline Asokoro General Hospital, Asokoro, Abuja</div>
+      <div class="fee">Fee consultation <span class="code"><s>#30k-#50k</s></span><span id="free">FREE</span></div>
+    </div>
+  </div>
   
-<script src="find-doctor.js"></script>
+  <div class="recommended">
+    
+  </div>
+</main>
+  
+<script src="../JS/find-doctor.js"></script>
 </body>
 
 </html>

@@ -36,7 +36,7 @@
 .search-container button {
   background: gray;
   border: none;
-  color: white;
+  color: #FEFBF4;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -132,4 +132,178 @@ h3 {
 
 #All {
   border: 1px solid black;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cards-container {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #FEFBF4;
+  flex-direction: column;
+  height: 70vh;
+  width: 20vh;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 350px;
+  height: 240px;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.card img {
+  border: 1px solid black;
+  width: 100px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 10%;
+  float: left;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+}
+
+.title {
+  position: relative;
+  top: -30px;
+  right: 20px;
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0 0;
+  float: left;
+}
+
+.rating {
+  position: relative;
+  right: 65px;
+  top: 15px;
+  font-size: 8px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 3px;
+  float: left;
+  margin-top: 55px;
+}
+
+.experience {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  color: #555;
+  float: left;
+}
+
+.availability {
+  font-size: 16px;
+  color: #555;
+  margin-top: 65px;
+}
+
+.consultation {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #000;
+  background-color: #FEFBF4;
+}
+
+.fee {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 11px;
+  font-size: 10px;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid black;
+  width: 350px;
+}
+        
+.code {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  left: 60px;
+}
+
+#free {
+  color: green;
+  font-size: 14px;
+}
+
+#Ola {
+  margin-top: 80px;
+}
+
+#Ola .name {
+  position: relative;
+  left: 10px;
+}
+
+#Ola .rating {
+  position: relative;
+  top: -15px;
+}
+
+#Ola .availability {
+  position: relative;
+  right: 125px;
+}
+
+#Olu {
+  margin-top: 80px;
+}
+
+#Uche {
+  margin-top: 100px;
+}
+
+#Uche .name {
+  font-size: 18px;
+  position: relative;
+  left: 10px;
+}
+
+#Uche .title {
+  position: relative;
+  top: -5px;
+  right: 155px;
+}
+
+#Uche .rating {
+  position: relative;
+  top: -15px;
+}
+
+#Uche .availability {
+  position: relative;
+  right: 125px;
+}
+
+.recommended {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #FEFBF4;
+  flex-direction: column;
+  height: 70vh;
+  width: 53%;
 }
