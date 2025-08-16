@@ -11,7 +11,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
-<!-- think im done it it  -->
+<!-- a problem came up andmessed the work but I think im done with this  -->
 <body>
   <div class="container">
     <div class="form">
@@ -20,36 +20,33 @@
       <h2>Create an account</h2>
     
         
-        <label for="name"><span class="required-star"></span></label><br>
-        <input type="text" id="name" placeholder="Enter Fullname"required><br>
         
-        <label for="email"></label><br>
-        <input type="email/tel" id="email/phone" placeholder="Email/Mobile number"><br>
-
-        <label for="password"></label><br>
-        <input type="password" placeholder="Create password" id="password"><br>
+        <input type="text" id="name" autocomplete="name" placeholder="Enter Fullname"required><br>
         
+        
+        <input type="email/tel" id="email/phone" autocomplete="email" placeholder="Email/Mobile number"><br>
 
-        <label for="Re-password"></label><br>
-        <input type="password" placeholder="Re-enter password" id="password"><br><br> 
        
+        <input type="password" autocomplete="new-password" placeholder="Create password" id="password"><br>
         
-          <button class="up-btn"><a href="home.html" >sign up</a></button>
-         
-        <div class="em">
+
+        
+        <input type="password" placeholder="Re-enter password" autocomplete="same-password"  id="password"><br><br> 
+       
+        <div class="button">
+
+        <button class="up-btn"><a href="login.html"  >sign up</a></button>
+        </div>
+
+        <div class="button">
         <i class="ri-mail-fill"></i>
         
-         <button class="email-btn"><a href="login.html" >sign up with Email</a></button> 
+        <button class="email-btn" ><a href="email-signup.html" >sign up with Email</a></button>
         
-       
         </div>
         
-        
-        
-        
-         
-
-        <h5>Already have an account? <a href="home.html">Log in</a></h5>
+      
+        <h5>Already have an account? <a href="login.html">Log in</a></h5>
         
     </div>
 

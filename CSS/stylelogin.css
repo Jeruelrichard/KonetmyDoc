@@ -1,4 +1,5 @@
 .container{
+  background-color: aquamarine;
   display:grid;
   width: 90%;
   height: 80vh;
@@ -35,15 +36,16 @@
 .email i{
  display:flex;
  position: absolute;
- padding:18px;
+ padding:10px;
+ margin-bottom: 20px;
  font-size: 2em;
 }
 .password i{
   display:flex;
   position: absolute;
   font-size: 2em;
-  padding:18px;
-  
+  padding:10px;
+  margin-bottom: 25px;
 }
 label{
   font-size: 1.5em;
@@ -176,7 +178,7 @@ button{
   }
   .form h1{
   text-align: center;
-  font-size:2em;
+  font-size:2.5em;
   font-weight: 600;
 
 }
@@ -191,10 +193,14 @@ button{
 .email i{
  position: absolute;
  padding:10px;
+ margin-left:10px;
+ margin-top: -10px;
 }
 .password i{
   position: absolute;
   padding:10px;
+  margin-left:10px;
+   margin-top: -10px;
 }
 label{
   font-weight: 700;
@@ -255,7 +261,7 @@ button{
 .logoog-btn img{
   position: absolute;
   padding:3px;
-  bottom:-27%;
+  bottom:27%;
   left:80px;
 }
 }
