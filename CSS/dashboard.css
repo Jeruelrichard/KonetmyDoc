@@ -49,6 +49,7 @@ nav {
     position: absolute;
     right: 0;
     left: 0;
+    font-size: 0.8rem;
 }
 
 #image-in-container {
