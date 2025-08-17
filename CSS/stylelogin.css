@@ -1,5 +1,4 @@
 .container{
-  background-color: aquamarine;
   display:grid;
   width: 90%;
   height: 80vh;
@@ -16,9 +15,7 @@
 
 
 .form h1{
-  /* align-items: start; */
   text-align: start;
-  /* justify-content: center; */
   margin-left: 20px;
   font-size:3.4em;
   font-weight: 700;
@@ -32,12 +29,11 @@
   font-weight: 500;
   margin-top:50px;
 }
-
 .email i{
  display:flex;
  position: absolute;
  padding:10px;
- margin-bottom: 20px;
+ bottom: 56%;
  font-size: 2em;
 }
 .password i{
@@ -45,7 +41,7 @@
   position: absolute;
   font-size: 2em;
   padding:10px;
-  margin-bottom: 25px;
+  bottom: 40%;
 }
 label{
   font-size: 1.5em;
@@ -107,29 +103,41 @@ button{
   margin-bottom: 20px;
   margin-left: 60px;
   border-radius: 10px; 
-  font-size :1.7em;
-  text-align: center;
   box-shadow:0 4px 8px black ;
 }
 .log-btn{
   background: var(--accent-color);
+  height: 80px;
+}
+.log-btn a{
+  text-decoration: none;
+  font-size :1.7em;
+  text-align: center;
   color:var(--bg-color);
- 
-
 }
 .logoog-btn{
   background-color: var(--bg-color);
-  border: 1px solid black;
-  
-  
+  border: 1px solid var(--link-color);;
+  height: 80px;
 }
-
+.logoog-btn a{
+   text-decoration: none;
+   font-size :1.7em;
+   text-align: center;
+   color:black;
+}
 .log-btn:hover{
-  border: 1px solid black;
-  color:var(--bg-color);
+  border: 1px solid var(--link-color); ;
+  background-color: var(--bg-color);
 }
 .logoog-btn:hover{
   color:var(--bg-color);
+}
+.log-btn a:hover{
+  color:var(--link-color);
+}
+.logoog-btn a:hover{
+  color: var(--bg-color);
 }
 .logoog-btn img{
   position: absolute;
@@ -155,220 +163,235 @@ button{
   justify-content: start;
   height: 75vh;
 }
-@media (max-width:767px){
-  .container{
-    align-items: start;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-  }
-  .form{
-    width:70%;
-    flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    margin:60px;
-  }
-  .image{
-    width:100%;
-    margin-left:10px;
-    margin-top:100px;
-    background-size: contain;
-    height: 60vh;
-  }
-  .form h1{
-  text-align: center;
-  font-size:2.5em;
-  font-weight: 600;
-
-}
-.form p{
-  text-align: start;
-  align-items: start;
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-top:20px;
-}
-
-.email i{
- position: absolute;
- padding:10px;
- margin-left:10px;
- margin-top: -10px;
-}
-.password i{
-  position: absolute;
-  padding:10px;
-  margin-left:10px;
-   margin-top: -10px;
-}
-label{
-  font-weight: 700;
-  font-size: 0.8em;
-  text-align: start;
-}
-.password input {
-  width:100%;
-  height: 50px;
-  text-align: center;
-  border:none;
-  font-size: 0.8em;
-}
-.email input {
-  width:100%;
-  height: 50px;
-  text-align: center;
-  border:none;
-  font-size: 0.8em;
-}
-.sign{
-  justify-content: start;
-   display: flex;
-   align-items: start;
-
-}
-.sign a{
-  justify-content: start;
-}
-.check input{
-justify-items: start;
-  align-items: start;
-  margin-top:50px;
-
-}
-.check label{
-  position: absolute;
-  padding:46px;
-  
-}
-button{
-  width:100%;
-  height: 50px; 
-  align-items: start;
-  margin: 5px;
-  font-size :1em;
-  text-align: center;
-}
-.log-btn{
-
-}
-.logoog-btn{
-  background-color: var(--bg-color);
-  border: 1px solid black;
-  
-}
-
-.logoog-btn img{
-  position: absolute;
-  padding:3px;
-  bottom:27%;
-  left:80px;
-}
-}
 @media (max-width:1024px){
   .container{
-    align-items: start;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-  }
-  .form{
-    width:70%;
-    flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    margin:60px;
-  }
-  .image{
-    width:100%;
-    margin-left:5px;
-    margin-top:200px;
-    background-size: contain;
-    height: 60vh;
-  }
-  .form h1{
-  text-align: center;
-  font-size:2em;
-  font-weight: 600;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form{
+  width:70%;
+  margin-top:15%;
+  margin-left:25%;
+}
+
+
+.form h1{
+  text-align: start;
+  margin-left: 20px;
+  font-size:3em;
+  font-weight: 700;
 
 }
 .form p{
   text-align: start;
-  align-items: start;
-  font-size: 1.3em;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
   font-weight: 500;
-  margin-top:20px;
+  margin-top:50px;
 }
-
 .email i{
+ display:flex;
  position: absolute;
  padding:10px;
+  bottom: 33%;
+ font-size: 1.2em;
 }
 .password i{
+  display:flex;
   position: absolute;
+  font-size: 1.2em;
   padding:10px;
+  bottom: 10%;
 }
 label{
+  font-size: 1.5em;
   font-weight: 700;
-  font-size: 0.8em;
-  text-align: start;
 }
 .password input {
   width:100%;
-  height: 50px;
+  height: 60px;
   text-align: center;
-  border:none;
-  font-size: 0.8em;
+   font-size: 1.5em;
 }
 .email input {
   width:100%;
-  height: 50px;
+  height: 60px;
   text-align: center;
-  border:none;
-  font-size: 0.8em;
+  font-size: 1.5em;
 }
+ .email{
+  display: flex;
+ }
+ .password{
+  display: flex;
+ }
 .sign{
-  justify-content: start;
-   display: flex;
-   align-items: start;
-
-}
-.sign a{
-  justify-content: start;
-}
-.check input{
-justify-items: start;
+  justify-content: center;
   align-items: start;
-  margin-top:50px;
-
-}
-.check label{
-  position: absolute;
-  padding:46px;
-  
+  display:flex;
+  flex-direction: column;
+   
 }
 button{
   width:100%;
-  height: 50px; 
-  align-items: start;
-  margin: 5px;
-  font-size :1.2em;
-  text-align: center;
+  height: 60px; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 5px;
 }
 .log-btn{
-  
+  height: 60px;
+}
+.log-btn a{
+  font-size :1.5em;
 }
 .logoog-btn{
-  background-color: var(--bg-color);
-  border: 1px solid black;
-  
+  height: 60px;
+}
+.logoog-btn a{
+   font-size :1.5em;
+}
+.logoog-btn img{
+  position: absolute;
+  padding:1px;
+  left:15%;
+}
+.form h5{
+  margin-left:40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+.image{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  margin-top: 60%;
+  margin-left: 6%;
+  align-items: start;
+  justify-content: start;
+}
+}
+@media (max-width:767px){
+  .container{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form{
+  width:70%;
+  margin-top:15%;
+  margin-left:25%;
+}
+
+
+.form h1{
+  text-align: start;
+  margin-left: 10px;
+  font-size:2.5em;
+  font-weight: 700;
+
+}
+.form p{
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top:20px;
+  margin-bottom: 30px;
+}
+.email i{
+ display:flex;
+ position: absolute;
+ padding:10px;
+  bottom: 41%;
+ font-size: 1em;
+}
+.password i{
+  display:flex;
+  position: absolute;
+  font-size: 1em;
+  padding:10px;
+  bottom: 20%;
+}
+label{
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.password input {
+  width:100%;
+  height: 60px;
+  text-align: center;
+   font-size: 1em;
+}
+.email input {
+  width:100%;
+  height: 60px;
+  text-align: center;
+  font-size: 1em;
+}
+ .email{
+  display: flex;
+ }
+ .password{
+  display: flex;
+ }
+.sign{
+  justify-content: center;
+  align-items: start;
+  display:flex;
+  flex-direction: column;
+   
+}
+.check label{
+  position: absolute;
+  padding:6px;
+}
+button{
+  width:100%;
+  height: 60px; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 2px;
+}
+.log-btn{
+  height: 50px;
+}
+.log-btn a{
+  font-size :1.2em;
+}
+.logoog-btn{
+  height: 50px;
+}
+.logoog-btn a{
+   font-size :1.2em;
+}
 .logoog-btn img{
   position: absolute;
   padding:3px;
-  left:80px;
-  bottom:-27%;  
-    
+  left:13%;
+  bottom:-31%
+}
+.form h5{
+  margin-left:20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  margin-top: 80%;
+  margin-left: 6%;
+  align-items: start;
+  justify-content: start;
 }
 }

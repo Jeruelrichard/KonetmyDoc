@@ -101,7 +101,7 @@ input{
 .form h5{
   margin-left:30px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .form h5 a{
   color:var(--accent-color);
@@ -123,17 +123,15 @@ input{
 }
 @media(max-width:1024px){
   .container{
-    background-color: red;
   display:grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .form{
-  background-color: aqua;
   width:70%;
   margin-top:10px;
   margin-left:50px;
-  margin-right: 10px;
+  /* margin-right: 5px; */
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
@@ -166,14 +164,14 @@ input{
 .up-btn{
   width:400px;
   padding:10px;
-  height: 80px;
-  border-radius: 10px;
+  height: 60px;
+  border-raius: 10px;
   margin-left:70px;
 }
 
 .email-btn{
   width:400px;
-  height: 80px;
+  height: 60px;
   border: 1px solid black;
   padding:10px;
   border-radius: 10px;
@@ -195,27 +193,27 @@ input{
 .form h5{
   margin-left:50px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .image{
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%; 
+  background-size: contain;
+  width: 150%;
   height:80vh;
-  margin-top: 20%;
-  margin-left: 10%;
+  margin-top: 30%;
+  margin-left: -25%;
+  
+  
 }
 }
 @media(max-width:767px){
   .container{
- background-color: red;
   display:grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .form{
-  background-color: aqua;
   width:70%;
   margin-top:20px;
   margin-left:30px;
@@ -286,9 +284,10 @@ input{
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%; 
-  height:90vh;
-  margin-top: 40%;
-  margin-left: 0%;
+  width: 150%;
+  height:80vh;
+  margin-top: 30%;
+  margin-left: -25%;
+  
 }
 }
