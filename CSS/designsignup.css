@@ -1,0 +1,293 @@
+.container{
+  display:grid;
+  width: 90%;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+}
+
+.form{
+  width:70%;
+  margin-top:20px;
+  margin-left:300px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+
+.form h1{
+  align-items: start;
+  text-align: center;
+  justify-content: center;
+  margin-left: 20px;
+  font-size:3.5em;
+  font-weight: 700;
+
+}
+.form h2{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+input{
+  width:600px;
+  height: 90px;
+  background-color: var(--primary-color);
+  text-align:center;
+  box-shadow:0 4px 8px grey;
+  border:none;
+  font-size: 1.6em;
+  margin-top:20px;
+  margin-left: 25px;
+}
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+     margin:10px;
+}
+
+.up-btn{
+  background: var(--accent-color);
+  width:600px;
+  padding:20px;
+  height: 80px;
+  border-radius: 10px;
+  margin:10px;
+}
+
+.email-btn{
+  background-color: var(--bg-color);
+  width:600px;
+  border: 1px solid black;
+  padding:20px;
+  border-radius: 10px;
+}
+.up-btn a{
+  color:var(--link-color);
+  font-size:2em;
+  text-decoration: none;
+}
+.email-btn a{
+  color:var(--accent-color);
+  text-decoration: none;
+  font-size:1.8em;
+}
+.button i{
+  color: var(--accent-color);
+  position: absolute;
+  padding: 2px;
+  left:20%;
+  font-size:2em;
+}
+.up-btn a:hover{
+  color:var(--bg-color)
+}
+.up-btn:hover{
+  background-color: darkgrey;
+  border: 1px solid black;
+  color: black;
+}
+.email-btn a:hover{
+  color:var(--primary-color)
+}
+.email-btn:hover{
+  color:var(--bg-color);
+}
+
+.form h5{
+  margin-left:30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.form h5 a{
+  color:var(--accent-color);
+  cursor: grab;
+}
+.form h5 a:hover{
+  color:var(--link-color);
+ 
+}
+.image{
+  background-image: url(../images/pic3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%; 
+  height:80vh;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+@media(max-width:1024px){
+  .container{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form{
+  width:70%;
+  margin-top:10px;
+  margin-left:50px;
+  /* margin-right: 5px; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.form h1{
+  margin-left: 10px;
+  font-size:2em;
+  font-weight: 700;
+}
+.form h2{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+input{
+  width:400px;
+  height: 50px;
+  box-shadow:0 4px 8px grey;
+  margin-top:10px;
+  margin-left: 25px;
+  font-size: 1em;
+}
+.button{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin:10px;
+}
+
+.up-btn{
+  width:400px;
+  padding:10px;
+  height: 60px;
+  border-raius: 10px;
+  margin-left:70px;
+}
+
+.email-btn{
+  width:400px;
+  height: 60px;
+  border: 1px solid black;
+  padding:10px;
+  border-radius: 10px;
+  margin-left:70px;
+}
+.up-btn a{
+  font-size:1.5em;
+}
+.email-btn a{
+  font-size:1.5em;
+}
+.button i{
+  position: absolute;
+  padding: 2px;
+  left:10%;
+  font-size:2em;
+}
+
+.form h5{
+  margin-left:50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150%;
+  height:80vh;
+  margin-top: 30%;
+  margin-left: -25%;
+  
+  
+}
+}
+@media(max-width:767px){
+  .container{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form{
+  width:70%;
+  margin-top:20px;
+  margin-left:30px;
+  margin-right: 5px;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.form h1{
+  margin-left: 20px;
+  font-size:2em;
+  font-weight: 700;
+}
+.form h2{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+input{
+  width:350px;
+  height: 50px;
+  box-shadow:0 4px 8px grey;
+  margin-top:10px;
+  margin-left: 25px;
+  font-size: 1em;
+}
+.button{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin:10px;
+}
+
+.up-btn{
+  width:350px;
+  padding:10px;
+  height: 60px;
+  border-radius: 10px;
+  margin-left:65px;
+}
+
+.email-btn{
+  width:350px;
+  height: 60px;
+  border: 1px solid black;
+  padding:10px;
+  border-radius: 10px;
+  margin-left:60px;
+}
+.up-btn a{
+  font-size:1.5em;
+}
+.email-btn a{
+  font-size:1.5em;
+}
+.button i{
+  position: absolute;
+  padding: 2px;
+  left:10%;
+  font-size:2em;
+}
+
+.form h5{
+  margin-left:50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150%;
+  height:80vh;
+  margin-top: 30%;
+  margin-left: -25%;
+  
+}
+}

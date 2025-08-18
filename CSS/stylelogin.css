@@ -1,0 +1,397 @@
+.container{
+  display:grid;
+  width: 90%;
+  height: 80vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form{
+  width:70%;
+  margin-top:15%;
+  margin-left:45%;
+  height: 70vh;
+  
+}
+
+
+.form h1{
+  text-align: start;
+  margin-left: 20px;
+  font-size:3.4em;
+  font-weight: 700;
+
+}
+.form p{
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-top:50px;
+}
+.email i{
+ display:flex;
+ position: absolute;
+ padding:10px;
+ bottom: 56%;
+ font-size: 2em;
+}
+.password i{
+  display:flex;
+  position: absolute;
+  font-size: 2em;
+  padding:10px;
+  bottom: 40%;
+}
+label{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.password input {
+  width:100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  text-align: center;
+   box-shadow:0 4px 8px grey;
+   border:none;
+   font-size: 2em;
+}
+.email input {
+  width:100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  text-align: center;
+  box-shadow:0 4px 8px grey;
+  border:none;
+  font-size: 2em;
+}
+ .email{
+  display: flex;
+ }
+ .password{
+  display: flex;
+ }
+.sign{
+  justify-content: space-between;
+  display:flex;
+  margin:20px;
+   
+}
+.sign a{
+  color:rgb(211, 4, 4);
+
+}
+.sign a:hover{
+  color:blue;
+  
+}
+.check input{
+justify-items: start;
+align-items: start;
+margin-top: 15px;
+  
+}
+.check label{
+  position: absolute;
+  padding:2px;
+}
+button{
+  width:80%;
+  height: 60px; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  border-radius: 10px; 
+  box-shadow:0 4px 8px black ;
+}
+.log-btn{
+  background: var(--accent-color);
+  height: 80px;
+}
+.log-btn a{
+  text-decoration: none;
+  font-size :1.7em;
+  text-align: center;
+  color:var(--bg-color);
+}
+.logoog-btn{
+  background-color: var(--bg-color);
+  border: 1px solid var(--link-color);;
+  height: 80px;
+}
+.logoog-btn a{
+   text-decoration: none;
+   font-size :1.7em;
+   text-align: center;
+   color:black;
+}
+.log-btn:hover{
+  border: 1px solid var(--link-color); ;
+  background-color: var(--bg-color);
+}
+.logoog-btn:hover{
+  color:var(--bg-color);
+}
+.log-btn a:hover{
+  color:var(--link-color);
+}
+.logoog-btn a:hover{
+  color: var(--bg-color);
+}
+.logoog-btn img{
+  position: absolute;
+  padding:1px;
+  left:25%;
+  min-width: 10px;
+}
+.form h5{
+  margin-left:40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image{
+  background-image:url(../images/pic1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  margin-top: 20%;
+  margin-left: 6%;
+  align-items: start;
+  justify-content: start;
+  height: 75vh;
+}
+@media (max-width:1024px){
+  .container{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form{
+  width:70%;
+  margin-top:15%;
+  margin-left:25%;
+}
+
+
+.form h1{
+  text-align: start;
+  margin-left: 20px;
+  font-size:3em;
+  font-weight: 700;
+
+}
+.form p{
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top:50px;
+}
+.email i{
+ display:flex;
+ position: absolute;
+ padding:10px;
+  bottom: 33%;
+ font-size: 1.2em;
+}
+.password i{
+  display:flex;
+  position: absolute;
+  font-size: 1.2em;
+  padding:10px;
+  bottom: 10%;
+}
+label{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.password input {
+  width:100%;
+  height: 60px;
+  text-align: center;
+   font-size: 1.5em;
+}
+.email input {
+  width:100%;
+  height: 60px;
+  text-align: center;
+  font-size: 1.5em;
+}
+ .email{
+  display: flex;
+ }
+ .password{
+  display: flex;
+ }
+.sign{
+  justify-content: center;
+  align-items: start;
+  display:flex;
+  flex-direction: column;
+   
+}
+button{
+  width:100%;
+  height: 60px; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+.log-btn{
+  height: 60px;
+}
+.log-btn a{
+  font-size :1.5em;
+}
+.logoog-btn{
+  height: 60px;
+}
+.logoog-btn a{
+   font-size :1.5em;
+}
+.logoog-btn img{
+  position: absolute;
+  padding:1px;
+  left:15%;
+}
+.form h5{
+  margin-left:40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  margin-top: 60%;
+  margin-left: 6%;
+  align-items: start;
+  justify-content: start;
+}
+}
+@media (max-width:767px){
+  .container{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form{
+  width:70%;
+  margin-top:15%;
+  margin-left:25%;
+}
+
+
+.form h1{
+  text-align: start;
+  margin-left: 10px;
+  font-size:2.5em;
+  font-weight: 700;
+
+}
+.form p{
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top:20px;
+  margin-bottom: 30px;
+}
+.email i{
+ display:flex;
+ position: absolute;
+ padding:10px;
+  bottom: 41%;
+ font-size: 1em;
+}
+.password i{
+  display:flex;
+  position: absolute;
+  font-size: 1em;
+  padding:10px;
+  bottom: 20%;
+}
+label{
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.password input {
+  width:100%;
+  height: 60px;
+  text-align: center;
+   font-size: 1em;
+}
+.email input {
+  width:100%;
+  height: 60px;
+  text-align: center;
+  font-size: 1em;
+}
+ .email{
+  display: flex;
+ }
+ .password{
+  display: flex;
+ }
+.sign{
+  justify-content: center;
+  align-items: start;
+  display:flex;
+  flex-direction: column;
+   
+}
+.check label{
+  position: absolute;
+  padding:6px;
+}
+button{
+  width:100%;
+  height: 60px; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 2px;
+}
+.log-btn{
+  height: 50px;
+}
+.log-btn a{
+  font-size :1.2em;
+}
+.logoog-btn{
+  height: 50px;
+}
+.logoog-btn a{
+   font-size :1.2em;
+}
+.logoog-btn img{
+  position: absolute;
+  padding:3px;
+  left:13%;
+  bottom:-31%
+}
+.form h5{
+  margin-left:20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  margin-top: 80%;
+  margin-left: 6%;
+  align-items: start;
+  justify-content: start;
+}
+}
