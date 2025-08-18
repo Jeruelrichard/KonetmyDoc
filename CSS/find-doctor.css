@@ -95,6 +95,15 @@
   gap: 10px;
 }
 
+/*Remove links-container if prob*/
+/*.links-container {
+  height:100%;
+  width:900px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}*/
+
 .second-header a {
   text-decoration: none;
   color: var(--text-color);
@@ -102,6 +111,19 @@
 
 .second-header a:hover {
   text-decoration: underline;
+}
+
+nav svg {
+  fill:var(--text-color);
+}
+
+#sidebar-active {
+  display:none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+  padding:0 20px;
+  display:none;
 }
 
 #findDoc {
@@ -551,6 +573,38 @@ main {
         margin: 0;
       }
 
+  .links-container {
+    display:none;
+    flex-direction:column;
+    align-items:flex-start;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:10;
+    width:250px;
+    background-color:var(--primary-color);
+    box-shadow:-5px 0 5px rgba(0, 0, 0, 0.25);
+  }
+  
+    .open-sidebar-button, .close-sidebar-button {
+    padding:20px;
+    display:block;
+  }
+  
+  #sidebar-active:checked ~ .links-container {
+    display:flex;
+    right:0;
+  }
+  
+  #sidebar-active:checked ~ #overlay {
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9;
+  }
+  
       .second-header {
         flex-direction: column;
         gap: 10px;
