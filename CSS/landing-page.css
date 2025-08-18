@@ -8,20 +8,23 @@ header {
   font-size: 1.7em;
   padding: 20px;
 }
+
 .nav-items a {
+  background-color: var(--accent-color);
   font-size: 20px;
   font-weight: bold;
-}
-
-header button {
   box-sizing: border-box;
   border-radius: 20px;
+  padding: 3px 20px;
   margin: 10px;
   cursor: button;
-  
 }
 
-header button#sign-up-btn {
+.nav-items a:hover {
+  background-color: var(--hover-color);
+}
+
+#sign-up-btn {
   background-color: transparent;
   border: 2px solid black;
 }
@@ -72,18 +75,20 @@ header button#sign-up-btn {
   margin: 5px 0;
 }
 
-.cta-btn {
+.book-appointment a {
   display: flex;
+  background-color: #DB8B5E;
+  box-sizing: border-box;
   border-radius: 20px;
-  border: none;
   padding: 10px 24px;
   cursor: pointer;
+  text-decoration: none;
   font-size: 2em;
+  color: #fff;
 }
 
-.cta-btn a {
-  text-decoration: none;
-  color: #fff;
+.book-appointment a:hover {
+  background-color: var(--hover-color);
 }
 
 .people-images {
@@ -122,7 +127,6 @@ footer {
   background-color: #1a2b3c;
   display: flex;
   justify-content: space-between;
-  /*flex-direction: column;*/
   align-items: center;
   font-size: 14px;
   padding: 20px 40px;
