@@ -5,11 +5,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/base.css">
+  <link rel="stylesheet" href="../CSS/appointment.css">
+  <title>Book Appointment</title>
+  <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+   <header class="first-header"><h1>Book Appointment</h1>
   
+  <div class="sadash">
+    <form class="search-container" id="searchForm">
+    <button type="submit" aria-label="Search">
+      <i class="fa-solid fa-magnifying-glass fa-1x"></i>
+    </button>
+    <input type="text" id="searchInput" placeholder="Search Doctor" autocomplete="off">
+  </form>
+  
+  <div class="patient-card">
+    <img src="/images/20250815_003505.webp">
+  <div class="patient-info"><h1>Michael Tobi Adeboye</h1><p>Patient</p>
+  </div>
+  </div>
+  </div>
+  </header>
+  
+  <header class="second-header">
+    <a href="appointment.html" id="intake">Intake Form</a>
+    <a href="find-doctor.html">Find Doctor</a>
+    <a href="#">Find Clinic Near Me</a>
+    <a href="dashboard.html">User Dashboard</a>
+    <button onclick="window.history.back()">Back</button>
+  </header>
 </body>
 
 </html>
