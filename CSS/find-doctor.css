@@ -521,3 +521,258 @@ main {
   padding: 10px;
   border-radius: 5px;
 }
+
+@media (max-width: 480px) {
+      .first-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+      }
+
+      .first-header h1 {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .sadash {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      .search-container {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .patient-card {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+      }
+
+      .second-header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .second-header p {
+        text-align: center;
+        padding: 8px;
+        background-color: white;
+        border-radius: 5px;
+        margin: 2px 0;
+      }
+
+      .second-header button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+      }
+
+      h3 {
+        margin: 15px;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .filter-bar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10px;
+        gap: 5px;
+      }
+
+      .filter-btn {
+        font-size: 16px;
+        padding: 8px 15px;
+        width: 80%;
+        text-align: center;
+        background-color: white;
+        border-radius: 5px;
+      }
+
+      main {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+      }
+
+      .cards-container {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+      }
+
+      .cards-container h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .card {
+        width: 100%;
+        min-height: auto;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+
+      .card img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+
+      .name {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      .rating {
+        position: static;
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+        background-color: #e8f5e8;
+      }
+
+      .title, .experience {
+        text-align: center;
+        margin: 5px 0;
+      }
+
+      .availability {
+        text-align: center;
+        margin: 10px 0 5px 0;
+        font-size: 14px;
+      }
+
+      .consultation {
+        text-align: center;
+        font-size: 12px;
+        margin: 3px 0;
+        padding: 3px;
+      }
+
+      .fee {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        padding: 8px;
+      }
+
+      .recommended {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+      }
+
+      .r-card {
+        min-height: auto;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+
+      .r-card img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+      }
+
+      .r-name {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      .recommend {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .specialtyXP {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .educationCert {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+
+      .attributes {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+
+      .r-consult {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+      }
+
+      .days {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+      }
+
+      .r-avail, .schedule, .symptoms {
+        text-align: center;
+      }
+
+      #symptoms {
+        text-align: center;
+      }
+
+      .docRev {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+      }
+
+      .c-card {
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+
+      .c-card img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+        width: 60px;
+        height: 60px;
+      }
+
+      .c-name {
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      .date {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      .comment {
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.4;
+        clear: both;
+        margin-top: 10px;
+      }
+
+      .recommended a {
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    }
