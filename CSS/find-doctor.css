@@ -100,6 +100,10 @@
   color: var(--text-color);
 }
 
+.second-header a:hover {
+  text-decoration: underline;
+}
+
 #findDoc {
   text-decoration: underline;
   font-weight: bold;
@@ -155,7 +159,6 @@ main {
   height: 240px;
   border: 1px solid black;
   padding: 10px;
-  font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   text-align: left;
   margin-top: 10px;
@@ -172,6 +175,7 @@ main {
 }
 
 .name {
+  font-family: OurFont;
   font-size: 20px;
   font-weight: bold;
   position: relative;
@@ -216,7 +220,9 @@ main {
 }
 
 .consultation {
+  font-family: OurFont;
   font-size: 14px;
+  font-weight: bold;
   margin-top: 10px;
   color: #000;
   background-color: #FEFBF4;
@@ -304,6 +310,214 @@ main {
   box-sizing: border-box;
   background-color: #FEFBF4;
   flex-direction: column;
-  height: 70vh;
+  height: 85vh;
   width: 53%;
+}
+
+.r-card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 23%;
+  padding: 10px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.r-card img {
+  width: 100px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 10%;
+  float: left;
+}
+
+.r-name {
+  font-family: OurFont;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+}
+
+.recommend {
+  font-size: 15px;
+  font-weight: bold;
+  color: green;
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+}
+
+.specialtyXP {
+  font-size: 12px;
+  color: #555;
+  position: relative;
+  top: 10px;
+  right: 110px;
+}
+
+.educationCert {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #555;
+}
+
+.attributes {
+  display: flex;
+  justify-content: space-between;
+  font-family: OurFont;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#cert {
+  position: relative;
+  left: 50px;
+}
+
+.r-avail {
+  color: #555;
+  position: relative;
+  top: 10px;
+  font-size: 15px;
+}
+
+.r-consult {
+  display: flex;
+  justify-content: space-between;
+  font-family: OurFont;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+  top: 15px;
+}
+
+.schedule {
+  color: #555;
+  position: relative;
+  top: 30px;
+  font-size: 15px;
+}
+
+.days {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 30px;
+  font-family: OurFont;
+}
+
+#day {
+  position: relative;
+  right: 80px;
+  font-weight: bold;
+}
+
+#time {
+  position: relative;
+  right: 140px;
+  color: #555;
+}
+
+.symptoms {
+  position: relative;
+  top: 50px;
+  color: #555;
+  font-size: 15px;
+}
+
+#symptoms {
+  font-family: OurFont;
+  font-weight: bold;
+  position: relative;
+  top: 55px;
+}
+
+.docRev {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  font-family: OurFont;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+#docRev {
+  font-weight: bold;
+  position: relative;
+  left: 15%;
+}
+
+#ratings {
+  color: #555;
+  position: relative;
+  right: 10%;
+}
+
+.c-card {
+  box-sizing: border-box;
+  width: 90%;
+  height: 240px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.c-card img {
+  border: 1px solid black;
+  width: 100px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10%;
+  float: left;
+}
+
+.c-name {
+  font-family: OurFont;
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+  top: 20px;
+}
+
+.date {
+  color: #555;
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+  top: 15px;
+}
+
+.comment {
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  top: 10px;
+}
+
+#Akpan img {
+  height: 120px;
+}
+
+#Clement {
+  height: 150px;
+}
+
+.recommended a {
+  align-self: end;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--accent-color);
+  padding: 10px;
+  border-radius: 5px;
 }
