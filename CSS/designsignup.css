@@ -115,13 +115,13 @@ input{
   background-image: url(../images/pic3.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 70%; 
   height:80vh;
   margin-top: 20%;
   margin-left: 20%;
 }
-@media(max-width:1024px){
+@media (max-width:1024px) {
   .container{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
@@ -165,7 +165,7 @@ input{
   width:400px;
   padding:10px;
   height: 60px;
-  border-raius: 10px;
+  border-radius: 10px;
   margin-left:70px;
 }
 
@@ -207,7 +207,7 @@ input{
   
 }
 }
-@media(max-width:767px){
+@media (max-width:767px) {
   .container{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
