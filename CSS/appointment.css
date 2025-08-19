@@ -48,7 +48,18 @@
 .search-container button:hover {
   background: var(--hover-color);
 }
-    
+
+.fa-solid.fa-bell.fa-1x, .fa-solid.fa-gear.fa-1x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEFBF4;
+  border-radius: 5px;
+  height: 50%;
+  width: 10%;
+  margin-top: 20px;
+}    
+
 .patient-card {
   display: flex;
   box-sizing: border-box;
@@ -80,12 +91,14 @@
 .patient-info h1 {
   font-size: 14px;
   font-weight: bold;
+  margin: 0;
 }
 
 .patient-info p {
   display: flex;
   justify-content: flex-start;
   font-size: 12px;
+  margin: 0;
 }
 
 .second-header {
