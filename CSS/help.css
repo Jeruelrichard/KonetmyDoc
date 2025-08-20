@@ -1,5 +1,4 @@
 body{
-  /* width:100%; */
   margin:0;
   padding:0;
   display: flex;
@@ -150,9 +149,6 @@ main .faq{
   font-size: 0.8em;
 }
 @media screen and (min-width:767px) and (max-width:1024px){
-  body{
-  width:100%;
-}
 header img{
   width:150px;
   height: 100px;
@@ -266,9 +262,6 @@ main .faq{
 }
 }
 @media (max-width:767px){
-body{
-  width:100%;
-}
 header img{
   width:100px;
   height: 80px;
