@@ -16,7 +16,7 @@
 .search-container {
   display: flex;
   align-items: center;
-  background: #FEFBF4;
+  background: white;
   border-radius: 50px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 5px 15px;
@@ -163,12 +163,13 @@ nav {
   justify-content: space-evenly;
   background-color: #FEFBF4;
   width: 8%;
-  height: 70em;
+  height: 60em;
   align-items: center;
 }
 
-nav i{
-  color: none;
+nav a{
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 nav button {
@@ -182,6 +183,86 @@ nav button {
   box-sizing: border-box;
   background-color: #FEFBF4;
   flex-direction: column;
-  height: 70em;
-  width: 80%;
+  height: 60em;
+  width: 85%;
+  margin-right: 40px;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+input[type="text"], input[type="tel"] {
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  outline: none;
+  font-family: OurFont;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons a {
+  background: var(--accent-color);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.firstCard, .secondCard {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 40%;
+  height: 15vh;
+}
+
+h4 {
+  font-family: OurFont;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+}
+
+#medserv {
+  font-size: 1.5em;
+}
+
+.card {
+  background-color: #FFB86A;
+  height: 100%;
+  clip-path: polygon(
+    0 0,          /* top left */
+    90% 0,        /* top right */
+    70% 50%,     /* right notch point */
+    90% 100%,     /* bottom right */
+    0 100%        /* bottom left */
+  );
+}
+
+.card img {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  margin: 10px 0 0 10px;
+}
+
+.card p {
+  width: 300px;
+  font-family: OurFont;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 10px 0 0 10px;
 }
