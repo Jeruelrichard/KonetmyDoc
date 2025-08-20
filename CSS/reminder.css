@@ -125,12 +125,13 @@
 }
 
 .sidelinks{
-    display: block;
+    display: inline-block;
     height: 60rem;
     width: 100px;
     background-color: #fff;
     margin-right: 2px;
     padding: 20px;   
+   
    
 }
 
@@ -139,8 +140,23 @@
     color: #000;
     font-size: 60px;
     line-height: 3;
-    margin-top: 70px;    
+    margin-top: 70px;  
+    
    
+}
+.about{
+    display:inline-block;
+    padding:5px;
+    cursor:pointer;
+    z-index:100;
+    position: relative;
+}
+.headphone{
+     display:inline-block;
+    padding:5px;
+    cursor:pointer;
+    z-index:100;
+    position: relative;
 }
 .fa-headphones{
     cursor: pointer;
