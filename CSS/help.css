@@ -1,0 +1,386 @@
+body{
+  /* width:100%; */
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+header img{
+  width:200px;
+  height: 150px;
+  margin: 30px;
+  margin-left: 80px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  gap:50px;
+  margin:30px;
+  margin-right: 80px;
+}
+button{
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  height: 60px;
+}
+button:hover{
+  background-color: rgb(45, 45, 63);
+}
+a{
+  text-decoration: none;
+  font-size: 1.8em;
+  color:var(--text-color)
+}
+.home{
+  font-weight: 500;
+  width:120px;
+  background-color: var(--primary-color);
+}
+.home a:hover{
+  color: var(--bg-color);
+}
+.about{
+  font-weight: 500;
+  width:200px;
+  background-color: var(--primary-color);
+}
+.about a:hover{
+  color: var(--bg-color);
+}
+.help{
+  font-weight: 700;
+}
+.dash{
+  font-weight: 500;
+  width:220px;
+  background-color: var(--primary-color);
+}
+.dash a:hover{
+  color: var(--bg-color);
+}
+.appoint{
+  font-weight: 500;
+  width:230px;
+}
+.appoint a:hover{
+  color: var(--bg-color);
+}
+main{
+  margin:100px;
+}
+main .faq{
+  display: flex;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+.faq h2{
+  margin-left: 50px;
+}
+.faq i{
+  position: absolute;
+  left:7%;
+  padding:12px;
+}
+.word{
+  margin-left: 50px;
+}
+.word h3{
+  font-size:1.5em ;
+}
+.word p{
+  font-size: 1.8em;
+}
+.contact{
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  
+}
+.contact h2{
+  font-size: 2em;
+}
+
+.contact img{
+  margin-left: 20px;
+  width:40px;
+}
+.cust{
+  width:50%;
+  margin-left: 50px;
+}
+.cust p{
+  font-size: 1.5em;
+}
+.support{
+  display: flex;
+  gap:10px;
+}
+.support img{
+  width:40px;
+}
+.port{
+  display: flex;
+  gap:15px;
+}
+.port i{
+  font-size:1.7em;
+}
+.sup{
+  width:50%;
+  border: 1px solid var(--bg-color);
+  background-color: #f7ecdd;
+  padding:20px;
+  margin-top:40px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+.sup h3{
+  font-size: 1.5em;
+}
+.sup p{
+  font-size: 1.5em;
+}
+.sup h5{
+  font-size: 0.8em;
+}
+@media screen and (min-width:767px) and (max-width:1024px){
+  body{
+  width:100%;
+}
+header img{
+  width:150px;
+  height: 100px;
+  margin: 20px;
+  margin-left: 40px;
+}
+nav{
+  gap:15px;
+  margin:10px;
+  margin-left: 20px;
+}
+button{
+  border-radius: 10px;
+  height: 40px;
+}
+a{
+  font-size: 1.2em;
+}
+.home{
+  width:80px;
+}
+.about{
+  width:150px;
+}
+.help{
+  width:150px;
+}
+.dash{
+  width:160px;
+}
+.appoint{
+  width:170px;
+}
+main{
+  margin:50px;
+}
+main .faq{
+  margin-bottom: 30px;
+  margin-left: 10px;
+  font-size: 1.3em;
+}
+.faq h2{
+  margin-left: 50px;
+}
+.faq i{
+  position: absolute;
+  left:7%;
+  padding:10px;
+}
+.word{
+  margin-left: 45px;
+}
+.word h3{
+  font-size:1.1em ;
+}
+.word p{
+  font-size: 1.2em;
+}
+.contact{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  
+}
+.contact h2{
+  font-size: 1.5em;
+}
+
+.contact img{
+  margin-left: 20px;
+  width:30px;
+  height: 30px;
+}
+.cust{
+  width:50%;
+  margin-left: 45px;
+}
+.cust p{
+  font-size: 1.2em;
+}
+.support{
+  display: flex;
+  gap:10px;
+}
+.support img{
+  width:30px;
+  height: 30px;
+}
+.port{
+  display: flex;
+  gap:15px;
+}
+.port i{
+  font-size:1.4em;
+}
+.sup{
+  width:50%;
+  padding:20px;
+  margin-top:30px;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+.sup h3{
+  font-size: 1.3em;
+}
+.sup p{
+  font-size: 1.2em;
+}
+.sup h5{
+  font-size: 0.7em;
+}
+}
+@media (max-width:767px){
+body{
+  width:100%;
+}
+header img{
+  width:100px;
+  height: 80px;
+  margin: 10px;
+  margin-left: 10px;
+}
+nav{
+  gap:5px;
+  margin:10px;
+  margin-left: 5px;
+  /* text-align: center; */
+}
+button{
+  border-radius: 10px;
+  height: 35px;
+  
+}
+a{
+  font-size: 1em;
+  /* text-align: center; */
+}
+.home{
+  width:65px;
+}
+.about{
+  width:130px;
+}
+.help{
+  width:120px;
+}
+.dash{
+  width:140px;
+}
+.appoint{
+  width:150px;
+}
+main{
+  margin:35px;
+}
+main .faq{
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 1.1em;
+}
+.faq h2{
+  margin-left: 40px;
+}
+.faq i{
+  position: absolute;
+  left:7%;
+  padding:8px;
+}
+.word{
+  margin-left: 45px;
+}
+.word h3{
+  font-size:1em ;
+}
+.word p{
+  font-size: 1em;
+}
+.contact{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  
+}
+.contact h2{
+  font-size: 1.2em;
+}
+
+.contact img{
+  margin-left: 20px;
+  width:30px;
+  height: 30px;
+}
+.cust{
+  width:50%;
+  margin-left: 45px;
+}
+.cust p{
+  font-size: 1em;
+}
+.support{
+  display: flex;
+  gap:10px;
+}
+.support img{
+  width:30px;
+  height: 30px;
+}
+.port{
+  display: flex;
+  gap:15px;
+}
+.port i{
+  font-size:1.4em;
+}
+.sup{
+  width:50%;
+  padding:20px;
+  margin-top:30px;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+.sup h3{
+  font-size: 1em;
+}
+.sup p{
+  font-size: 1em;
+}
+.sup h5{
+  font-size: 0.6em;
+}
+}
