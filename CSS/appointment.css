@@ -128,3 +128,60 @@
   border-radius: 10px;
   padding: 10px;
 }
+
+.links-container {
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+.second-header svg {
+  fill:var(--text-color);
+}
+
+#sidebar-active {
+  display:none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+  padding:0 20px;
+  display:none;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #FEFBF4;
+  width: 8%;
+  height: 70em;
+  align-items: center;
+}
+
+nav i{
+  color: none;
+}
+
+nav button {
+  background: none;
+  color: none;
+  padding: 0;
+}
+
+.intakeForm {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #FEFBF4;
+  flex-direction: column;
+  height: 70em;
+  width: 80%;
+}

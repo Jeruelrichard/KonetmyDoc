@@ -33,12 +33,38 @@
   </header>
   
   <header class="second-header">
-    <a href="appointment.html" id="intake">Intake Form</a>
-    <a href="find-doctor.html">Find Doctor</a>
-    <a href="#">Find Clinic Near Me</a>
-    <a href="dashboard.html">User Dashboard</a>
-    <button onclick="window.history.back()">Back</button>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+      
+      <a href="appointment.html"id="intake">Intake Form</a>
+      <a href="find-doctor.html">Find Doctor</a>
+      <a href="#">Find Clinic Near Me</a>
+      <a href="dashboard.html">User Dashboard</a>
+      <button onclick="window.history.back()">Back</button>
+    </div>
   </header>
+  
+  <main>
+  <nav>
+   <a href="home.html"><i class="fa-solid fa-house fa-3x"></i></a>
+   <a href="help.html"><i class="fa-solid fa-circle-question fa-3x"></i></a>
+   <a href="#"><i class="fa-solid fa-headset fa-3x"></i></a>
+   <a href="about.html"><i class="fa-solid fa-circle-info fa-3x"></i></a>
+   <button onclick="window.history.back()"><i class="fa-solid fa-arrow-left-long fa-3x"></i></button>
+  </nav>
+  
+  <div class="intakeForm">
+    Hallelujah
+  </div>
+  </main>
 </body>
 
 </html>
