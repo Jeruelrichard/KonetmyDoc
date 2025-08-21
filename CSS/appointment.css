@@ -226,7 +226,7 @@ input[type="text"], input[type="tel"] {
   box-sizing: border-box;
   flex-direction: column;
   width: 40%;
-  height: 15vh;
+  height: 50vh;
 }
 
 h4 {
@@ -320,4 +320,158 @@ h6 {
 .arrow {
   font-size: 2rem;
   color: #666;
+}
+
+@media (max-width: 767px) {
+  .first-header, .second-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .fa-solid.fa-bell.fa-1x, .fa-solid.fa-gear.fa-1x {
+    display: none
+  }
+
+  nav {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .intakeForm {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .patient-card img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .firstCard, .secondCard {
+    width: 100%;
+  }
+
+  .card p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-header, .second-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .fa-solid.fa-bell.fa-1x, .fa-solid.fa-gear.fa-1x {
+    display: none
+  }
+
+  .links-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 250px;
+    background-color: var(--accent-color);
+    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+  }
+
+  .second-header a {
+    box-sizing: border-box;
+    height:auto;
+    width:100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+
+  .second-header a:hover {
+    background-color: var(--hover-color);
+  }
+
+  .second-header button {
+    display: none;
+  }
+
+  .open-sidebar-button, .close-sidebar-button {
+    padding:20px;
+    display:block;
+  }
+
+  #sidebar-active:checked ~ .links-container {
+    display: flex;
+    right:0;
+  }
+
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+ }
+
+  nav {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .intakeForm {
+    width: 100%;
+    margin-top:30px;
+    margin-right: 0;
+  }
+
+  .patient-card img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .firstCard, .secondCard {
+    width: 50%;
+    height: 40vh;
+  }
+
+  h4 {
+    font-size:24px;
+  }
+
+  #medserv {
+    font-size: 20px;
+  }
+
+  .card img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .card p{
+    width: 150px;
+    font-size: 10px;
+  }
 }
