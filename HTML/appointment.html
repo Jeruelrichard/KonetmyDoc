@@ -5,11 +5,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/base.css">
+  <link rel="stylesheet" href="../CSS/appointment.css">
+  <title>Book Appointment</title>
+  <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+   <header class="first-header"><h1>Book Appointment</h1>
   
+  <div class="sadash">
+    <form class="search-container" id="searchForm">
+    <button type="submit" aria-label="Search">
+      <i class="fa-solid fa-magnifying-glass fa-1x"></i>
+    </button>
+    <input type="text" id="searchInput" placeholder="Search Doctor" autocomplete="off">
+  </form>
+  <i class="fa-solid fa-bell fa-1x"></i>
+  <i class="fa-solid fa-gear fa-1x"></i>
+  <div class="patient-card">
+    <img src="/images/20250815_003505.webp">
+  <div class="patient-info"><h1>Michael Tobi Adeboye</h1><p>Patient</p>
+  </div>
+  </div>
+  </div>
+  </header>
+  
+  <header class="second-header">
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+      
+      <a href="appointment.html"id="intake">Intake Form</a>
+      <a href="find-doctor.html">Find Doctor</a>
+      <a href="#">Find Clinic Near Me</a>
+      <a href="dashboard.html">User Dashboard</a>
+      <button onclick="window.history.back()">Back</button>
+    </div>
+  </header>
+  
+  <main>
+  <nav>
+   <a href="home.html"><i class="fa-solid fa-house fa-3x"></i></a>
+   <a href="help.html"><i class="fa-solid fa-circle-question fa-3x"></i></a>
+   <a href="#"><i class="fa-solid fa-headset fa-3x"></i></a>
+   <a href="about.html"><i class="fa-solid fa-circle-info fa-3x"></i></a>
+   <button onclick="window.history.back()"><i class="fa-solid fa-arrow-left-long fa-3x"></i></button>
+  </nav>
+  
+  <div class="intakeForm">
+    <h2>Patient Information</h2>
+   <form id="register">
+    <label for="Fullname">Fullname:</label><br>
+    <input type="text" name="Fullname"><br><br>
+
+    <label for="DOB"> Date Of Birth (DD/MM/YY):</label><br>
+    <input type="text" name="DOB" ><br><br>
+    
+    <label for="reason">Reason for Visit (kindly describe your reason for visit):</label><br>
+    <input type="text" name="reason" ><br><br>
+    
+    <label for="gender">Gender:</label><br>
+    <input type="text" name="gender" ><br><br>
+
+    <label for="number">Phone Number:</label><br>
+    <input type="tel" name="number"><br><br>
+    
+    <label for="datime">Select Preferred Date & Time:</label><br>
+    <input type="text" name="datime" ><br><br>
+    
+    <label for="question"> Do you have any Chronic Illness or current conditions?</label><br>
+    <input type="text" name="question" ><br><br>
+    
+    <div class="buttons">
+    <a href="dashboard.html">Confirm</a>
+    <a href="reminder.html">Set Reminder</a>
+    </div>
+   </form>
+  </div>
+  </main>
+  
+  <section class="info">
+    <div class="firstCard">
+      <h4 id="medserv">MEDICAL SERVICES AT HOME</h4>
+      <div class="card">
+        <img src="/images/male-nurse-working-clinic_23-2149868924 (1).webp">
+        <p>Receive medical services and book appointment from the comfort of your home</p>
+      </div>
+    </div>
+    
+    <div class="secondCard">
+      <h4>FREE CONSULTATION</h4>
+      <div class="card"><img src="/images/EvywKY4XAAUEDPz.webp">
+      <p>We offer free consultation to first time patients <br> From initial diagnosis to nutrition and healthy lifestyle, we are ready to provide services to you.</p>
+      </div>
+    </div>
+  </section>
+  
+    <h6>How it works?</h6>
+  
+  <div class="process-flow">
+  <div class="step">
+    <div class="icon"><img src="/images/ei_1755781428830-removebg-preview.png" id="page"></div>
+    <h3>Fill intake form</h3>
+  </div>
+  
+  <div class="arrow">→</div>
+  
+  <div class="step">
+    <div class="icon">  <img src="/images/ei_1755781755843-removebg-preview.png" id="nurse"></div>
+    <h3>Choose doctor / clinic</h3>
+  </div>
+  
+  <div class="arrow">→</div>
+  
+  <div class="step">
+    <div class="icon"><img src="/images/ei_1755781783366-removebg-preview.png" id="hospital"></div>
+    <h3>Get services</h3>
+  </div>
+</div>
 </body>
 
 </html>

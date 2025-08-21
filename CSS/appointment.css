@@ -1,0 +1,477 @@
+.first-header {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.sadash {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 5px 15px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+    
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  flex: 1;
+}
+    
+.search-container button {
+  background: gray;
+  border: none;
+  color: #FEFBF4;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+    
+.search-container button:hover {
+  background: var(--hover-color);
+}
+
+.fa-solid.fa-bell.fa-1x, .fa-solid.fa-gear.fa-1x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEFBF4;
+  border-radius: 5px;
+  height: 50%;
+  width: 10%;
+  margin-top: 20px;
+}    
+
+.patient-card {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #FEFBF4;
+  width: fit-content;
+  gap: 10px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.patient-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.patient-info h1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.patient-info p {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  margin: 0;
+}
+
+.second-header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FEFBF4;
+  gap: 10px;
+}
+
+.second-header a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.second-header a:hover {
+  text-decoration: underline;
+}
+
+#intake {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.second-header button {
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.links-container {
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+.second-header svg {
+  fill:var(--text-color);
+}
+
+#sidebar-active {
+  display:none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+  padding:0 20px;
+  display:none;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #FEFBF4;
+  width: 8%;
+  height: 60em;
+  align-items: center;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav button {
+  background: none;
+  color: none;
+  padding: 0;
+}
+
+.intakeForm {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #FEFBF4;
+  flex-direction: column;
+  height: 60em;
+  width: 85%;
+  margin-right: 40px;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+input[type="text"], input[type="tel"] {
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  outline: none;
+  font-family: OurFont;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons a {
+  background: var(--accent-color);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.firstCard, .secondCard {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 40%;
+  height: 50vh;
+}
+
+h4 {
+  font-family: OurFont;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+}
+
+#medserv {
+  font-size: 1.5em;
+}
+
+.card {
+  background-color: #FFB86A;
+  height: 100%;
+  clip-path: polygon(
+    0 0,          /* top left */
+    90% 0,        /* top right */
+    70% 50%,     /* right notch point */
+    90% 100%,     /* bottom right */
+    0 100%        /* bottom left */
+  );
+}
+
+.card img {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  margin: 10px 0 0 10px;
+}
+
+.card p {
+  width: 300px;
+  font-family: OurFont;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 10px 0 0 10px;
+}
+
+h6 {
+  font-size: 2em;
+  font-family: OurFont;
+  font-weight: bold;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.process-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 90px;
+}
+
+.step {
+  text-align: center;
+  max-width: 150px;
+}
+
+.process-flow img {
+  height: 200px;
+  width: 200px;
+}
+
+#nurse {
+  height: 100px;
+  width: 100px;
+}
+
+#hospital {
+  margin-bottom: 40px;
+}
+
+.icon {
+  font-family: OurFont;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #666;
+}
+
+@media (max-width: 767px) {
+  .first-header, .second-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .fa-solid.fa-bell.fa-1x, .fa-solid.fa-gear.fa-1x {
+    display: none
+  }
+
+  nav {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .intakeForm {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .patient-card img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .firstCard, .secondCard {
+    width: 100%;
+  }
+
+  .card p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-header, .second-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .fa-solid.fa-bell.fa-1x, .fa-solid.fa-gear.fa-1x {
+    display: none
+  }
+
+  .links-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 250px;
+    background-color: var(--accent-color);
+    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+  }
+
+  .second-header a {
+    box-sizing: border-box;
+    height:auto;
+    width:100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+
+  .second-header a:hover {
+    background-color: var(--hover-color);
+  }
+
+  .second-header button {
+    display: none;
+  }
+
+  .open-sidebar-button, .close-sidebar-button {
+    padding:20px;
+    display:block;
+  }
+
+  #sidebar-active:checked ~ .links-container {
+    display: flex;
+    right:0;
+  }
+
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+ }
+
+  nav {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .intakeForm {
+    width: 100%;
+    margin-top:30px;
+    margin-right: 0;
+  }
+
+  .patient-card img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .firstCard, .secondCard {
+    width: 50%;
+    height: 40vh;
+  }
+
+  h4 {
+    font-size:24px;
+  }
+
+  #medserv {
+    font-size: 20px;
+  }
+
+  .card img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .card p{
+    width: 150px;
+    font-size: 10px;
+  }
+}
