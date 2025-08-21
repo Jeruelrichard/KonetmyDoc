@@ -5,10 +5,215 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/base.css">
+  <link rel="stylesheet" href="../CSS/reminder.css">
+  <script src="../JS/script.js"></script>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
 </head>
 
 <body>
+
+<article id="container">
+
+  <section class="section1">
+ <div>
+  <h1>Reminder Settings</h1>
+ </div>
+
+ <div class="search">
+  <p><span><i class=" fa fa-search" aria-hidden="true"></i></span>Search Doctor</p>
+ </div>
+
+ <div class="notifications" >
+  <div class="bell">
+   <i class="fa fa-bell" aria-hidden="true"></i>
+  </div>
+
+  <div class="setting">
+    <i class="fa fa-cog" aria-hidden="true" ></i>
+  </div>
+ </div>
+
+ <div class="image">
+  <img src="../images/IMG-20250815-WA0035.jpg" alt="">
+  <p>Michael Tobi Adeboye<br>Patient</p>
+ 
+ </div>
+
+ </section>
+
+
+    <section id="section2">
+
+    <div class="sidelinks">
+    <div>
+     <a href="./home.html"><i class="fa fa-home" aria-hidden="true"></i>
+    </a>
+    </div>
+
+
+    <div>
+     <a href="./help.html"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="headphone">
+   <a href=""><i class="fa fa-headphones" aria-hidden="true"></i> </a>
+    </div>
+
+    <div class="about" >
+      <a href="./about.html"> <i class="fa-solid fa-circle-info"></i></a>
+    </div>
+
+    <div class="response">
+      <a href="" onclick="window.history.back()"><i class="fa fa-reply" aria-hidden="true"></i></a>
+    </div>
+
+  </div>
+
+  <div class=" formlinks">
+ 
+      <p><a href="appointment.html">Intake Form</a></p>
+    
+    <div>
+      <a href="find-doctor.html">Find Doctor</a>
+    </div>
+    <div>
+      <a href="#">Find Clinic Near me</a>
+    </div>
+
+    <div>
+      <a href="dashboard.html">User Dashboard</a>
+    </div>
+
+     <button  onclick="window.history.back()">Back</button> 
+
+  </div>
+
   
+    <div class="methodsection">
+    <div class="remind">
+      <p><a href="">Reminder Methods</a></p> 
+
+     
+      <div id="myspan">
+          <div class="span"></div>
+     <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+ 
+    </div>
+
+     <div id="messages">
+      <p>Email</p>
+      <p>SMS/Text</p>
+      <p>Push Notification</p>
+    </div>
+
+    <div class="reply">
+      <p><a href=" "> Reminder Timing</a></p>
+
+       <div id="Newspan">
+        <div class="span"></div>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div id="Timing">
+      <p>1 Day before</p>
+      <p>3 Hours before</p>
+      <p>1 Hour before</p>
+    </div>
+
+
+
+    <div class="optout">
+      <p> <a href=""> Opt-Out</a></p> 
+
+       <div id="outspan">
+         <div class="span"></div>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+
+       </div>
+
+         <div id="turnoff">
+        <p>Turn Off Notification</p>
+     </div>
+  
+
+  </div>
+
+
+ </section>
+
+</section>
+
+</article>
+
+<script>
+
+let span = document.getElementById("myspan");
+let is_open = false
+
+span.addEventListener("click",()=>{
+
+  if(is_open === false){
+  document.getElementById("messages").style.display ="none"
+
+  is_open = true
+
+  }else{
+     document.getElementById("messages").style.display ="block"
+     is_open = false
+
+  }
+ 
+
+  });
+
+ 
+  let Newspan = document.getElementById("Newspan")
+
+  let open = false
+  Newspan.addEventListener("click",()=>{
+
+    if(open === false){
+    document.getElementById("Timing").style.display ="none"
+
+    open= true
+
+  }else{
+     document.getElementById("Timing").style.display ="block"
+
+     open = false
+
+  }
+
+  });
+
+  let outspan = document.getElementById("outspan");
+  let openicon = false
+  outspan.addEventListener("click",()=>{
+    if(openicon === false){
+
+    document.getElementById("turnoff").style.display ="none"
+    openicon = true
+
+}else{
+  document.getElementById("turnoff").style.display ="block"
+
+ openicon = false
+}
+  });
+
+</script>
+
+
+
+
 </body>
 
 </html>
