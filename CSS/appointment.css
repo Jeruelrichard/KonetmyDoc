@@ -217,7 +217,7 @@ input[type="text"], input[type="tel"] {
 
 .info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
 }
 
@@ -265,4 +265,59 @@ h4 {
   font-weight: bold;
   font-size: 13px;
   margin: 10px 0 0 10px;
+}
+
+h6 {
+  font-size: 2em;
+  font-family: OurFont;
+  font-weight: bold;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.process-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 90px;
+}
+
+.step {
+  text-align: center;
+  max-width: 150px;
+}
+
+.process-flow img {
+  height: 200px;
+  width: 200px;
+}
+
+#nurse {
+  height: 100px;
+  width: 100px;
+}
+
+#hospital {
+  margin-bottom: 40px;
+}
+
+.icon {
+  font-family: OurFont;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #666;
 }
