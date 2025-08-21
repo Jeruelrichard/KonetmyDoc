@@ -1,39 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./../CSS/base.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
   <link rel="stylesheet" href="./../CSS/dashboard.css">
+  <link rel="stylesheet" href="./../CSS/base.css">
   <link rel="stylesheet" href="./../CSS/variables.css">
-  <title>User Dash Board</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div>image</div>
-      <a href="./home.html" class="nav-buttons">Home</a>
-      <a href="./about.html" class="nav-buttons">About us/Legal</a>
-      <a href="./help.html" class="nav-buttons">Help & Support</a>
-      <div><b>User Dash Board</b></div>
-      <a href="./appointment.html" class="book-app-button">Book Appointment</a>
-    </nav>
-  </header>
+  <input type="checkbox" id="toggle">
+  <nav>
+    <div class="image-div"><img src="./../images/KonetmyDoc-image.jpg" alt=""></div>
+    <div>
+      <b>User Dashboard</b>
+    </div>
+    <label for="toggle" id="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </nav>
+  <div class="div-for-container">
+    <div class="image-div"><img src="./../images/KonetmyDoc-image.jpg" alt="" id="image-in-container"></div>
+    <div>
+      <a href="./home.html">Home</a>
+      <a href="./about.html">About us/Legal</a>
+      <a href="./help.html">Help & Support</a>
+      <div class="user-dashboard-in-container"><b>User Dashboard</b></div>
+      <a href="./appointment.html" id="book-appointment-in-container">Book Appointment</a>
+    </div>
+    <label for="toggle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="currentColor" aria-hidden="true" class="x-button">
+        <path
+          d="M7.05 5.64L12 10.59l4.95-4.95 1.41 1.41L13.41 12l4.95 4.95-1.41 1.41L12 13.41l-4.95 4.95-1.41-1.41L10.59 12 5.64 7.05l1.41-1.41z" />
+      </svg></label>
+  </div>
   <main>
     <div>
-      <div class="image-div"><img src="./../images/user-image.png" alt="" width="150rem"></div>
-      <div><p>Michael Tobi Adeboye</p></div>
-      <div class="Edit-profile"><p>Edit Profile</p></div>
+      <div class="image-div1"><img src="./../images/user-image.png" alt=""></div>
+      <div class="his-name">Michael Tobi Adeboye</div>
+      <div class="Edit-profile">Edit Profile</div>
     </div>
-    <div class="right-section">
-      <a href="./upcoming-appointment.html" class="right-section-buttons"><b>Upcoming Appointments</b></a>
-      <a href="./appointment-history.html" class="right-section-buttons"><b>Appointment History</b></a>
-      <a href="./reschedule-appointments.html" class="right-section-buttons"><b>Reschedule Appointment</b></a>
-      <a href="./documents.html" class="right-section-buttons"><b>Documents</b></a>
-      <a href="./reminder.html" class="right-section-buttons"><b>Reminder Settings</b></a>
+    <div>
+      <a href="./upcoming-appointment.html"><b>Upcoming Appointments</b></a>
+      <a href="./appointment-history.html"><b>Appointment History</b></a>
+      <a href="./reschedule-appointments.html"><b>Reschedule Appointment</b></a>
+      <a href="./documents.html"><b>Documents</b></a>
+      <a href="./reminder.html"><b>Reminder Settings</b></a>
     </div>
   </main>
 </body>
+
 </html>
+</body>
+
+</html>
+<!-- give -->
