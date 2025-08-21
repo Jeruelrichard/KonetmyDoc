@@ -1,0 +1,855 @@
+.first-header {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.sadash {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #FEFBF4;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 5px 15px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+    
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  flex: 1;
+}
+    
+.search-container button {
+  background: gray;
+  border: none;
+  color: #FEFBF4;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+    
+.search-container button:hover {
+  background: var(--hover-color);
+}
+    
+.patient-card {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #FEFBF4;
+  width: fit-content;
+  gap: 10px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.patient-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.patient-info h1 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.patient-info p {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+}
+
+.second-header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FEFBF4;
+  gap: 10px;
+}
+
+.second-header a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.second-header a:hover {
+  text-decoration: underline;
+}
+
+#findDoc {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.second-header button {
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h3 {
+  margin: 30px;
+  margin-top: 15px;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FEFBF4;
+  margin-top: -30px;
+}
+
+.filter-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+#All {
+  border: 1px solid black;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cards-container {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #FEFBF4;
+  flex-direction: column;
+  height: 70vh;
+  width: 20vh;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 350px;
+  height: 240px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.card img {
+  border: 1px solid black;
+  width: 100px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 10%;
+  float: left;
+}
+
+.name {
+  font-family: OurFont;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+}
+
+.title {
+  position: relative;
+  top: -30px;
+  right: 20px;
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0 0;
+  float: left;
+}
+
+.rating {
+  position: relative;
+  right: 65px;
+  top: 15px;
+  font-size: 8px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 3px;
+  float: left;
+  margin-top: 55px;
+}
+
+.experience {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  color: #555;
+  float: left;
+}
+
+.availability {
+  font-size: 16px;
+  color: #555;
+  margin-top: 65px;
+}
+
+.consultation {
+  font-family: OurFont;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #000;
+  background-color: #FEFBF4;
+}
+
+.fee {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 11px;
+  font-size: 10px;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid black;
+  width: 350px;
+}
+        
+.code {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  left: 60px;
+}
+
+#free {
+  color: green;
+  font-size: 14px;
+}
+
+#Ola .name {
+  position: relative;
+  left: 10px;
+}
+
+#Ola .rating {
+  position: relative;
+  top: -15px;
+}
+
+#Ola .availability {
+  position: relative;
+  right: 125px;
+}
+
+#Uche {
+  margin-top: 30px;
+}
+
+#Uche .name {
+  font-size: 18px;
+  position: relative;
+  left: 10px;
+}
+
+#Uche .title {
+  position: relative;
+  top: -5px;
+  right: 155px;
+}
+
+#Uche .rating {
+  position: relative;
+  top: -15px;
+}
+
+#Uche .availability {
+  position: relative;
+  right: 125px;
+}
+
+.recommended {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #FEFBF4;
+  flex-direction: column;
+  height: 85vh;
+  width: 53%;
+}
+
+.r-card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 23%;
+  padding: 10px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.r-card img {
+  width: 100px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 10%;
+  float: left;
+}
+
+.r-name {
+  font-family: OurFont;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+}
+
+.recommend {
+  font-size: 15px;
+  font-weight: bold;
+  color: green;
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+}
+
+.specialtyXP {
+  font-size: 12px;
+  color: #555;
+  position: relative;
+  top: 10px;
+  right: 110px;
+}
+
+.educationCert {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #555;
+}
+
+.attributes {
+  display: flex;
+  justify-content: space-between;
+  font-family: OurFont;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#cert {
+  position: relative;
+  left: 50px;
+}
+
+.r-avail {
+  color: #555;
+  position: relative;
+  top: 10px;
+  font-size: 15px;
+}
+
+.r-consult {
+  display: flex;
+  justify-content: space-between;
+  font-family: OurFont;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+  top: 15px;
+}
+
+.schedule {
+  color: #555;
+  position: relative;
+  top: 30px;
+  font-size: 15px;
+}
+
+.days {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 30px;
+  font-family: OurFont;
+}
+
+#day {
+  position: relative;
+  right: 80px;
+  font-weight: bold;
+}
+
+#time {
+  position: relative;
+  right: 140px;
+  color: #555;
+}
+
+.symptoms {
+  position: relative;
+  top: 50px;
+  color: #555;
+  font-size: 15px;
+}
+
+#symptoms {
+  font-family: OurFont;
+  font-weight: bold;
+  position: relative;
+  top: 55px;
+}
+
+.docRev {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  font-family: OurFont;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+#docRev {
+  font-weight: bold;
+  position: relative;
+  left: 15%;
+}
+
+#ratings {
+  color: #555;
+  position: relative;
+  right: 10%;
+}
+
+.c-card {
+  box-sizing: border-box;
+  width: 90%;
+  height: 240px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.c-card img {
+  border: 1px solid black;
+  width: 100px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10%;
+  float: left;
+}
+
+.c-name {
+  font-family: OurFont;
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+  top: 20px;
+}
+
+.date {
+  color: #555;
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+  top: 15px;
+}
+
+.comment {
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  top: 10px;
+}
+
+#Akpan img {
+  height: 120px;
+}
+
+#Clement {
+  height: 150px;
+}
+
+.recommended a {
+  align-self: end;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--accent-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .first-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+  .first-header h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+  .sadash {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+}
+
+  .search-container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+  .patient-card {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+  
+  
+  .second-header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+  .second-header a {
+    text-align: center;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 2px 0;
+}
+
+  .second-header button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+  h3 {
+   margin: 15px;
+   font-size: 18px;
+   text-align: center;
+}
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px;
+    gap: 5px;
+}
+
+  .filter-btn {
+    font-size: 16px;
+    padding: 8px 15px;
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+  main {
+   flex-direction: column;
+   padding: 10px;
+   gap: 20px;
+}
+
+  .cards-container {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+  .cards-container h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+  .card {
+    width: 100%;
+    height: 220px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+  .card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    float: left;
+    display: block;
+    object-fit: cover;
+}
+
+  .name {
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+}
+
+  .rating {
+    position: relative;
+    top: -7%;
+    right: 20%;
+}
+
+  .title, .experience {
+    text-align: center;
+}
+
+  .availability {
+    font-size: 12px;
+    margin-top: 60px;
+    position: relative;
+    right: 110px;
+}
+
+  .consultation {
+    text-align: start;
+    font-size: 12px;
+    margin: 3px 0;
+    padding: 3px;
+}
+
+  .fee {
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+    padding: 8px;
+    width: 111.5%;
+    right: 16px;
+}
+
+.code {
+  font-size: 10px;
+  left: 50px;
+}
+
+#Ebuka img {
+  object-fit: contain;
+}
+
+#Ola .availability {
+  right: 110px;
+}
+
+#Olu .name {
+  left: -20px;
+}
+
+#Olu .rating {
+  top: 14px;
+}
+
+#Olu .availability {
+  right: 80px;
+}
+
+#Uche .name {
+  font-size: 16px;
+}
+
+#Uche .title {
+  top: -30px;
+  right: 20px;
+}
+
+#Uche .rating {
+  top: -10px;
+}
+
+#Uche .availability {
+  top: 2px;
+  right: 110px;
+}
+
+  .recommended {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+  .r-card {
+    min-height: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+  .r-card img {
+    float: none;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+  .r-name {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+  .recommend {
+    text-align: center;
+    margin-bottom: 10px;
+    bottom: 5px;
+}
+
+  .specialtyXP {
+    font-size: 10px;
+    margin-bottom: 15px;
+    top: 10px;
+}
+
+  .educationCert {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+  .attributes {
+    flex-direction: row;
+    font-size: 10px;
+    gap: 8px;
+    text-align: center;
+}
+
+#uni {
+  position: relative;
+  left: -30px;
+}
+
+#cert {
+  left: 30px;
+}
+
+.r-avail {
+  top: 20px;
+}
+
+  .r-consult {
+    font-size: 10px;
+    flex-direction: column;
+    gap: 5px;
+    text-align: start;
+    top: 20px;
+}
+
+  .days {
+    font-size: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    text-align: center;
+}
+
+#day, #time {
+  right: 0;
+}
+
+.symptoms {
+  top: 40px;
+}
+
+  #symptoms {
+    font-size: 10px;
+    text-align: start;
+    top: 45px;
+}
+
+  .docRev {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+  .c-card {
+    padding: 15px;
+    margin-left: 10px;
+}
+
+  .c-card img {
+    float: none;
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 60px;
+    height: 60px;
+}
+
+  .c-name {
+    text-align: center;
+    top: -10px;
+}
+
+  .date {
+    text-align: center;
+    font-size: 12px;
+    left: 90px;
+    top: -20px;
+}
+
+  .comment {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.4;
+    clear: both;
+    top: -23px;
+  }
+  
+  #Josh .comment, #Akpan .comment, #Clement .comment {
+    top: -10px;
+  }
+  
+  #Akpan img {
+    height: 60px;
+    aspect-ratio: 1/1;
+  }
+
+  .recommended a {
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}

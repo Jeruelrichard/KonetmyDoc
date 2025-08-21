@@ -4,11 +4,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+   <link rel="stylesheet" href="../CSS/variables.css">
+   <link rel="stylesheet" href="../CSS/base.css">
+   <link rel="stylesheet" href="../CSS/find-doctor.css">
+  <title>Find A Doctor</title>
+  <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
-
+<!-- git -->
 <body>
+  <header class="first-header"><h1>Doctor Profile</h1>
   
+  <div class="sadash">
+    <form class="search-container" id="searchForm">
+    <button type="submit" aria-label="Search">
+      <i class="fa-solid fa-magnifying-glass fa-1x"></i>
+    </button>
+    <input type="text" id="searchInput" placeholder="Search doctor or specialist" autocomplete="off">
+  </form>
+  
+  <div class="patient-card">
+    <img src="/images/20250815_003505.jpg">
+  <div class="patient-info"><h1>Michael Tobi Adeboye</h1><p>Patient</p>
+  </div>
+  </div>
+  </div>
+  </header>
+  
+  <header class="second-header">
+    <a href="appointment.html">Intake Form</a>
+    <a href="find-doctor.html" id="findDoc">Find Doctor</a>
+    <a href="#">Find Clinic Near Me</a>
+    <a href="dashboard.html">User Dashboard</a>
+    <button onclick="window.history.back()">Back</button>
+  </header>
+  
+  <h3> Category</h3>
+  <header class="filter-bar">
+  <button class="filter-btn active" data-filter="all" id="All">All</button>
+  <button class="filter-btn" data-filter="family-doctor">Family Doctor</button>
+  <button class="filter-btn" data-filter="psychologist">Psychologist</button>
+  <button class="filter-btn" data-filter="dermatologist">Dermatologist</button>
+  <button class="filter-btn" data-filter="allergist">Allergist</button>
+  <button class="filter-btn" data-filter="internal-medicine">Internal Medicine</button>
+</header>
+
+<main>
+  <div class="cards-container">
+    <h1>Choose Doctor</h1>
+    <div class="card" data-category="psychologist" id="Ebuka">
+      <img src="/images/african-doctor-medical-record-male-south-africa-patient-his-hand-33997769.webp">
+      <span class="name"><b>Dr. Ebuka Anyanwu</b></span>
+      <div class="rating">⭐ 4.9</div>
+      <span class="experience">5 years experience</span>
+      <div class="title">Psychologist specialist</div>
+      <div class="availability">Available Today: </div>
+      <div class="consultation">*Online Consultation</div>
+      <div class="consultation">*Offline Garki Hospital, Area 3, Garki, Abuja</div>
+      <div class="fee">Fee consultation <span class="code"><s>#30k-#50k</s></span><span id="free">FREE</span></div>
+    </div>
+    
+    <div class="card" data-category="family-doctor" id="Ola">
+      <img src="/images/male-nurse-working-clinic_23-2149868924 (1).webp">
+      <span class="name"><b>Dr. Oladipo Ayomide</b></span>
+      <div class="rating">⭐ 5.0</div>
+      <span class="experience">10 years experience</span>
+      <div class="title">Family Doctor</div>
+      <div class="availability">Available Today: </div>
+      <div class="consultation">*Online Consultation</div>
+      <div class="consultation">*Offline Baylight Watch Hospital, Garki, Abuja</div>
+      <div class="fee">Fee consultation <span class="code"><s>#30k-#50k</s></span><span id="free">FREE</span></div>
+    </div>
+    
+    <div class="card" data-category="family-doctor" id="Olu">
+      <img src="/images/20250816_020045.webp">
+      <span class="name"><b>Dr. Oluwa David</b></span>
+      <div class="rating">⭐ 4.9</div>
+      <span class="experience">8 years experience</span>
+      <div class="title">Family Doctor</div>
+      <div class="availability">Available Today: </div>
+      <div class="consultation">*Online Consultation</div>
+      <div class="consultation">*Offline Maritama General Hospital, Maitama, Abuja</div>
+      <div class="fee">Fee consultation <span class="code"><s>#20k-#60k</s></span><span id="free">FREE</span></div>
+    </div>
+    
+    <div class="card" data-category="allergist" id="Uche">
+      <img src="/images/shutterstock_1927229678.webp">
+      <span class="name"><b>Dr. Uchechukwu Esther</b></span>
+      <div class="rating">⭐ 5.0</div>
+      <span class="experience">10 years experience</span>
+      <div class="title">Allergist</div>
+      <div class="availability">Available Today: </div>
+      <div class="consultation">*Online Consultation</div>
+      <div class="consultation">*Offline Asokoro General Hospital, Asokoro, Abuja</div>
+      <div class="fee">Fee consultation <span class="code"><s>#30k-#50k</s></span><span id="free">FREE</span></div>
+    </div>
+  </div>
+  
+  <div class="recommended">
+    <div class="r-card">
+      <img src="/images/shutterstock_1927229678.webp">
+        <span class="r-name">Dr. Uchechukwu Ajuba Esther</span>
+        <span class="recommend">>Recommended</span>
+        <span class="specialtyXP">Allergist • 10 years experience</span>
+        <div class="educationCert"><span id="education">Education</span> <span id="certificate">Certificate</span> </div>
+        <div class="attributes"><span id="uni">MD in Allergy and Immunology</span><span id="cert">Certificate Allergist/Immunologist</span></div>
+        <span class="r-avail">Availabile Today: </span>
+        <div class="r-consult"><span id="online">*Online Consultation</span><span id="offline">*Offline Asokoro General Hospital, Asokoro Abuja</span></div>
+        <span class="schedule">Schedule;</span>
+        <div class="days"><span id="day">Monday-Sunday</span><span id="time">10.00-12.00</span></div>
+        <span class="symptoms">Symptoms</span>
+        <div id="symptoms">Chest Pain and Breathing Issues</div>
+    </div>
+    
+    <div class="docRev">
+      <span id="docRev">Doctor's Review</span>
+      <span id="ratings">(290 reviews)</span>
+    </div>
+    
+    <div class="c-card">
+      <img src="/images/photo-1615453262312-022a72d3842a.webp">
+      <div class="c-name"><span id="text">Nadia Nnamdi • </span><span id="c-rating">⭐ 4.9</span></div>
+      <span class="date">22 July 2025</span>
+      <div class="comment">
+        Dr Uche was really patient with me, She’s literally a girls’ girl. I came in thinking I just had dust allergy but she uncovered a mild asthma issue as well. it was a lot to take in at first but she gave me resources and follow-up calls. Wish she come in during late night hours though cause of late night emergencies.
+      </div>
+    </div>
+    
+    <div class="c-card" id="Josh">
+      <img src="/images/istockphoto-1255196385-612x612.webp">
+      <div class="c-name"><span id="text">Joshua Okpara • </span><span id="c-rating">⭐ 5.0</span></div>
+      <span class="date">19 June 2025</span>
+      <div class="comment">
+        If you want a doctor who listens, this is the place. i didn’t feel like just another patient- Dr Uche asked some important questions that i didn’t know contributed to my condition. My health has improved drastically in just 2 weeks.
+      </div>
+    </div>
+    
+    <div class="c-card" id="Akpan">
+      <img src="/images/photo-1723221906960-1c5a5febc9c3.webp">
+      <div class="c-name"><span id="text">Michael Akpan Uwem • </span><span id="c-rating">⭐ 4.9</span></div>
+      <span class="date">10 June 2025</span>
+      <div class="comment">
+        Very Knowledgeable and professional. They caught an allergy my previous doctor missed completely. Only downside was the initial wait time, about 20–30 mins past my appointment. I guess she really has lots of patients.
+      </div>
+    </div>
+    
+    <div class="c-card" id="Clement">
+      <img src="/images/57MtfrRLZHKf91a14B3B.webp">
+      <div class="c-name"><span id="text">Oluwa Ayo Clement • </span><span id="c-rating">⭐ 4.0</span></div>
+      <span class="date">25 May 2025</span>
+      <div class="comment">
+        My appointment with Dr Uche went well.
+      </div>
+    </div>
+    
+    <a href="appointment.html">
+      Book Appointment
+    </a>
+  </div>
+</main>
+  
+<script src="../JS/find-doctor.js"></script>
 </body>
 
 </html>
