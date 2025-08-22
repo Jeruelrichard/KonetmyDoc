@@ -80,7 +80,7 @@ input{
   color: var(--accent-color);
   position: absolute;
   padding: 2px;
-  left:20%;
+  left:25%;
   font-size:2em;
 }
 .up-btn a:hover{
