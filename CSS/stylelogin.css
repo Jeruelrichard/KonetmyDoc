@@ -132,8 +132,8 @@ button{
    color:black;
 }
 .log-btn:hover{
-  border: 1px solid var(--link-color); ;
-  background-color: var(--bg-color);
+  border: 1px solid var(--link-color);
+  background-color: var(--hover-color);
 }
 .logoog-btn:hover{
   color:var(--bg-color);
