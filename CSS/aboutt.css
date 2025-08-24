@@ -225,4 +225,79 @@ main ul{
 }
 }  
 
+@media (max-width:480px){
+
+  header *{
+    font-size:10px;
+    padding:10px;
+    margin:0;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .image img{
+    justify-content: start;
+    align-items: start;
+    width:100px;
+    height: 80px;
+  }
+  nav{
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0px;
+    gap:10px;
+    box-sizing: border-box;
+  }
+  button{
+    border-radius: 10px;
+    height: 40px;
+  }
   
+  nav a{
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+  }
+  .home{
+    width:80px;
+    font-weight: 500;
+  }
+  .about{
+    font-weight: 700;
+    width:150px;
+  }
+  .help{
+    width:100px;
+    font-weight: 500;
+  }
+  .dash{
+    width:100px;
+    font-weight: 500;
+  }
+  .appoint{
+    width:120px;
+    font-weight: 600;
+  }
+  main{
+    margin:20px;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  main h2{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 1.5em;
+  }
+  main p{
+    font-size: 1em;
+    margin-left: 10px;
+  }
+  main ul{
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
+}
