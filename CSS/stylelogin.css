@@ -10,9 +10,7 @@
   margin-top:15%;
   margin-left:45%;
   height: 70vh;
-  
 }
-
 
 .form h1{
   text-align: start;
@@ -28,20 +26,27 @@
   font-size: 1.8em;
   font-weight: 500;
   margin-top:50px;
+
+}
+.email{
+ display:flex;
 }
 .email i{
- display:flex;
  position: absolute;
  padding:10px;
- bottom: 56%;
+ top:41%;
+ left:22%;
  font-size: 2em;
 }
+.password{
+   display:flex;
+}
 .password i{
-  display:flex;
   position: absolute;
-  font-size: 2em;
   padding:10px;
-  bottom: 40%;
+  top:59%;
+  left:22%;
+  font-size: 2em;
 }
 label{
   font-size: 1.5em;
@@ -166,6 +171,7 @@ button{
 @media (max-width:1024px){
   .container{
   display:grid;
+  height: 50vh;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -191,19 +197,14 @@ button{
   font-weight: 500;
   margin-top:50px;
 }
+
 .email i{
- display:flex;
- position: absolute;
- padding:10px;
-  bottom: 33%;
- font-size: 1.2em;
+  top:68%;
+  left:12%;
 }
 .password i{
-  display:flex;
-  position: absolute;
-  font-size: 1.2em;
-  padding:10px;
-  bottom: 10%;
+  top:95%;
+  left:12%;
 }
 label{
   font-size: 1.5em;
@@ -306,18 +307,12 @@ button{
   margin-bottom: 30px;
 }
 .email i{
- display:flex;
- position: absolute;
- padding:10px;
-  bottom: 41%;
- font-size: 1em;
+  top:60%;
+ font-size: 1.5em;
 }
 .password i{
-  display:flex;
-  position: absolute;
-  font-size: 1em;
-  padding:10px;
-  bottom: 20%;
+  font-size: 1.5em;
+  top:86%;
 }
 label{
   font-size: 1.2em;
