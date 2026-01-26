@@ -4,118 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Reminder Settings</title>
   <link rel="stylesheet" href="../CSS/variables.css">
   <link rel="stylesheet" href="../CSS/base.css">
   <link rel="stylesheet" href="../CSS/reminder.css">
   <script src="../JS/script.js"></script>  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-
-
+  <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-<article id="container">
-
-  <section class="section1">
- <div>
-  <h1>Reminder Settings</h1>
- </div>
-
- <div class="search">
-  <p><span><i class=" fa fa-search" aria-hidden="true"></i></span>Search Doctor</p>
- </div>
-
- <div class="notifications" >
-  <div class="bell">
-   <i class="fa fa-bell" aria-hidden="true"></i>
-  </div>
-
-  <div class="setting">
-    <i class="fa fa-cog" aria-hidden="true" ></i>
-  </div>
- </div>
-
- <div class="image">
-  <img src="../images/IMG-20250815-WA0035.jpg" alt="">
-  <p>Michael Tobi Adeboye<br>Patient</p>
- 
- </div>
-
- </section>
-
-
-    <section id="section2">
-
-    <div class="sidelinks">
-    <div>
-     <a href="./home.html"><i class="fa fa-home" aria-hidden="true"></i>
-    </a>
-    </div>
-
-
-    <div>
-     <a href="./help.html"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
-    </div>
-
-    <div class="headphone">
-   <a href=""><i class="fa fa-headphones" aria-hidden="true"></i> </a>
-    </div>
-
-    <div class="about" >
-      <a href="./about.html"> <i class="fa-solid fa-circle-info"></i></a>
-    </div>
-
-    <div class="response">
-      <a href="" onclick="window.history.back()"><i class="fa fa-reply" aria-hidden="true"></i></a>
-    </div>
-
-  </div>
-
-  <div class=" formlinks">
- 
-      <p><a href="appointment.html">Intake Form</a></p>
-    
-    <div>
-      <a href="find-doctor.html">Find Doctor</a>
-    </div>
-    <div>
-      <a href="#">Find Clinic Near me</a>
-    </div>
-
-    <div>
-      <a href="dashboard.html">User Dashboard</a>
-    </div>
-
-     <button  onclick="window.history.back()">Back</button> 
-
-  </div>
-
+   <header class="first-header"><h1>Reminder Settings</h1>
   
-    <div class="methodsection">
+  <div class="sadash">
+    <form class="search-container" id="searchForm">
+    <button type="submit" aria-label="Search">
+      <i class="fa-solid fa-magnifying-glass fa-1x"></i>
+    </button>
+    <input type="text" id="searchInput" placeholder="Search Doctor" autocomplete="off">
+  </form>
+  <i class="fa-solid fa-bell fa-1x"></i>
+  <i class="fa-solid fa-gear fa-1x"></i>
+  <div class="patient-card">
+    <img src="../images/IMG-20250815-WA0035.jpg">
+  <div class="patient-info"><h1>Michael Tobi Adeboye</h1><p>Patient</p>
+  </div>
+  </div>
+  </div>
+  </header>
+  
+  <header class="second-header">
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+      
+      <a href="appointment.html">Intake Form</a>
+      <a href="find-doctor.html">Find Doctor</a>
+      <a href="#">Find Clinic Near Me</a>
+      <a href="dashboard.html">User Dashboard</a>
+      <button onclick="window.history.back()">Back</button>
+    </div>
+  </header>
+  
+  <main>
+  <nav>
+   <a href="home.html"><i class="fa-solid fa-house fa-3x"></i></a>
+   <a href="help.html"><i class="fa-solid fa-circle-question fa-3x"></i></a>
+   <a href="#"><i class="fa-solid fa-headset fa-3x"></i></a>
+   <a href="about.html"><i class="fa-solid fa-circle-info fa-3x"></i></a>
+   <button onclick="window.history.back()"><i class="fa-solid fa-arrow-left-long fa-3x"></i></button>
+  </nav>
+  
+  <div class="reminder-content">
     <div class="remind">
       <p><a href="">Reminder Methods</a></p> 
-
-     
       <div id="myspan">
           <div class="span"></div>
      <i class="fa fa-chevron-down" aria-hidden="true"></i>
       </div>
- 
     </div>
 
-     <div id="messages">
+    <div id="messages">
       <p>Email</p>
       <p>SMS/Text</p>
       <p>Push Notification</p>
     </div>
 
     <div class="reply">
-      <p><a href=" "> Reminder Timing</a></p>
-
-       <div id="Newspan">
+      <p><a href="">Reminder Timing</a></p>
+      <div id="Newspan">
         <div class="span"></div>
           <i class="fa fa-chevron-down" aria-hidden="true"></i>
       </div>
@@ -127,31 +90,19 @@
       <p>1 Hour before</p>
     </div>
 
-
-
     <div class="optout">
-      <p> <a href=""> Opt-Out</a></p> 
-
-       <div id="outspan">
+      <p><a href="">Opt-Out</a></p> 
+      <div id="outspan">
          <div class="span"></div>
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
       </div>
+    </div>
 
-       </div>
-
-         <div id="turnoff">
+    <div id="turnoff">
         <p>Turn Off Notification</p>
-     </div>
-  
-
+    </div>
   </div>
-
-
- </section>
-
-</section>
-
-</article>
+  </main>
 
 <script>
 

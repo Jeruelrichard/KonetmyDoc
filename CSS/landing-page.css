@@ -69,13 +69,7 @@ header {
   margin: 20px 0;
 }
 
-.book-appointment {
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-}
-
-.book-appointment a {
+.hero a {
   display: flex;
   background-color: #DB8B5E;
   box-sizing: border-box;
@@ -83,11 +77,13 @@ header {
   padding: 10px 24px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.2em;
   color: #fff;
+  width: 40%;
+  margin-top: 60px;
 }
 
-.book-appointment a:hover {
+.hero a:hover {
   background-color: var(--hover-color);
 }
 
@@ -325,13 +321,12 @@ footer {
       }
 
       /* Book Appointment Button */
-      .book-appointment {
-        margin: 20px 0;
-      }
 
-      .book-appointment a {
+      .hero a {
         font-size: 1.3em;
         padding: 12px 20px;
+        width: 90%;
+        margin-left: 10px;
       }
 
       /* People Images */

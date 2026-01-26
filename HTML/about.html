@@ -7,83 +7,97 @@
   <link rel="stylesheet" href="../CSS/variables.css">
   <link rel="stylesheet" href="../CSS/base.css">
   <link rel="stylesheet" href="../CSS/aboutt.css">
+  <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="card">
-  <header>
-    <div class="image">
-      <img src="../images/KonetmyDoc-image - Copy.jpg" alt="logo">
+  <!--First Header-->
+  <header class="logo-header">
+    <h1>Find us
+     <a href="#"><i class="fa-brands fa-square-instagram fa-1.5x" style="color: #d100bc;"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook fa-1.5x" id="facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter fa-1.5x" id="twitter"></i></a>
+    </h1>
+  </header>
+  
+  <!--Second Header-->
+  <header class="nav-tab">
+      <div class="logo">
+            <img src="../images/IMG-20250813-WA0319.jpg">
+      </div>
+      <nav class="nav-items">
+         <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+            <a href="home.html">Home</a>
+            <a href="about.html" id="home">About Us/Legal</a>
+            <a href="help.html">Help & Support</a>
+            <a href="dashboard.html">User Dashboard</a>
+            <a href="appointment.html" id="appointment">Book Appointment</a>
     </div>
-    
-    <nav>
-      <div >
-    <button class="home"><a href="./home.html">Home</a></button></div>
-      <div class="about" >
-    <a href="./about.html">About Us/Legal</a></div>
-        <div >
-    <button class="help" ><a href="./help.html">Help & Support</a></button></div>
-        <div >
-    <button class="dash"><a href="./dashboard.html">User Dashboard</a></button></div>
-          <div >
-    <button class="appoint" ><a href="./appointment.html">Book Appointment</a></button></div>
-    
       </nav>
-      
   </header>
 
   <main>
     <div class="container">
-    <h2>Mission Statement</h2>
-    <p>To simplify and personalize the healthcare booking experience for everty user by leveraging smart reminders, seamless rescheduling, and inclusive communication-making healthcare more accessible, inclusive, and patient-first.</p><br><br>
-    <h2>Vision Statement</h2>
-    <p>To become the leading digital health platform that redefines how people connect with care-by blending innovation, empathy, and efficiency to improve outcomes and patient satisfaction across all age groups and backgrounds.</p><br><br>
-    <h2>Privacy Policy</h2>
-    <p>Information We Collect:</p>
+      <h2>Mission Statement</h2>
+      <p>To simplify and personalize the healthcare booking experience for every user by leveraging smart reminders, seamless rescheduling, and inclusive communication—making healthcare more accessible, inclusive, and patient-first.</p>
+
+      <h2>Vision Statement</h2>
+      <p>To become the leading digital health platform that redefines how people connect with care—by blending innovation, empathy, and efficiency to improve outcomes and patient satisfaction across all age groups and backgrounds.</p>
+
+      <h2>Privacy Policy</h2>
+      <p><strong>Information We Collect:</strong></p>
       <ul>
         <li>Personal details (name, contact info, gender, birthday)</li>
         <li>Health-related preferences and appointment history</li>
         <li>Device data and usage activity (for analytics & optimization)</li>
       </ul>
-    <p>How we use Your Information:</p>
+      <p><strong>How we use Your Information:</strong></p>
       <ul>
         <li>To send reminders via SMS, email, or in-app</li>
         <li>To personalize appointment suggestions and autofill options</li>
         <li>For communication, service improvement, and rescheduling</li>
       </ul>
-    <p>Data Security:</p>
-     <ul>
-      <li>Encryption of sensitive data</li>
-      <li>Role-based access for healthcare providers</li>
-      <li>Regular audits to maintain privacy standards</li>
-     </ul>
-    <p>Your Rights:</p>
-    <ul>
-      <li>Access or modify your data</li>
-      <li>Opt-out of communication</li>
-      <li>Delete your account and associated data</li>
-    </ul><br><br>
-  <h2>Terms of Service</h2>
-    <p>User Responsibilities:</p>
+      <p><strong>Data Security:</strong></p>
+      <ul>
+        <li>Encryption of sensitive data</li>
+        <li>Role-based access for healthcare providers</li>
+        <li>Regular audits to maintain privacy standards</li>
+      </ul>
+      <p><strong>Your Rights:</strong></p>
+      <ul>
+        <li>Access or modify your data</li>
+        <li>Opt-out of communication</li>
+        <li>Delete your account and associated data</li>
+      </ul>
+
+      <h2>Terms of Service</h2>
+      <p><strong>User Responsibilities:</strong></p>
       <ul>
         <li>Ensure accuracy of personal data</li>
-        <li>Show up or cancel/reshedule in advance</li>
-        <li>Use plateform features responsibly</li>
+        <li>Show up or cancel/reschedule in advance</li>
+        <li>Use platform features responsibly</li>
       </ul>
-    <p>Service Commitments:</p>
-    <ul>
-      <li>Timely and relevant health-related reminders</li>
-      <li>Transparent doctor availability, especially weekends</li>
-      <li>Easy-to-use interface for all age groups using inclusive language</li>
-    </ul>
-    <p>Booking Terms:</p>
-    <ul>
-      <li>Rescheduling available up to [X hours/days] before appointment</li>
-      <li>One-tap confirmation and cancellation options provided</li>
-      <li>Doctors are assigned considering availability and demand patterns</li>
-    </ul>
+      <p><strong>Service Commitments:</strong></p>
+      <ul>
+        <li>Timely and relevant health-related reminders</li>
+        <li>Transparent doctor availability, especially weekends</li>
+        <li>Easy-to-use interface for all age groups using inclusive language</li>
+      </ul>
+      <p><strong>Booking Terms:</strong></p>
+      <ul>
+        <li>Rescheduling available up to [X hours/days] before appointment</li>
+        <li>One-tap confirmation and cancellation options provided</li>
+        <li>Doctors are assigned considering availability and demand patterns</li>
+      </ul>
     </div>
-    
   </main>
-  </div>
 </body>
 </html>
